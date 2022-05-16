@@ -9,12 +9,11 @@ vignette: >
  	
 # Introduction to Bioconductor Annotation Resources
 
-Bioc 2022: 4-6 August
+Bioc 2022: 27-29 July
 
 ## Instructors
 
 * James W. MacDonald (jmacdon@umich.edu)
-* Lori Shepherd (lori.shepherd@roswellpark.org)
 
 
 ## Workshop Description
