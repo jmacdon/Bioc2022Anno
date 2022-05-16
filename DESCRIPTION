@@ -1,6 +1,6 @@
 Package: Bioc2022Anno
 Title: Package for Bioconductor 2022 annotation workshop
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: c(person("James", "MacDonald", role = c("aut", "cre"),
 	            email = "jmacdon@uw.edu"),
              person("Lori", "Shepherd", role = c("aut"),
