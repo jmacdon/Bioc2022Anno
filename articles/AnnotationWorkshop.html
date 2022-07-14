@@ -219,64 +219,64 @@ as complex as a <code>RangedSummarizedExperiment</code></p>
 <h3 id="expressionset">ExpressionSet<a class="anchor" aria-label="anchor" href="#expressionset"></a>
 </h3>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/load.html" class="external-link">load</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"Bioc2022Anno"</span>, <span class="st">"extdata"</span><span class="op">)</span>, <span class="st">"eset.Rdata"</span><span class="op">)</span><span class="op">)</span>
-<span class="va">eset</span></code></pre></div>
-<pre><code><span class="co">## ExpressionSet (storageMode: lockedEnvironment)</span>
-<span class="co">## assayData: 33552 features, 6 samples </span>
-<span class="co">##   element names: exprs </span>
-<span class="co">## protocolData: none</span>
-<span class="co">## phenoData</span>
-<span class="co">##   sampleNames: GSM2194079 GSM2194080 ... GSM2194084 (6 total)</span>
-<span class="co">##   varLabels: title characteristics_ch1.1</span>
-<span class="co">##   varMetadata: labelDescription</span>
-<span class="co">## featureData</span>
-<span class="co">##   featureNames: 16657436 16657440 ... 17118478 (33552 total)</span>
-<span class="co">##   fvarLabels: PROBEID ENTREZID SYMBOL GENENAME</span>
-<span class="co">##   fvarMetadata: labelDescription</span>
-<span class="co">## experimentData: use 'experimentData(object)'</span>
-<span class="co">## Annotation: pd.hugene.2.0.st</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/load.html" class="external-link">load</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"Bioc2022Anno"</span>, <span class="st">"extdata"</span><span class="op">)</span>, <span class="st">"eset.Rdata"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">eset</span></span></code></pre></div>
+<pre><code><span><span class="co">## ExpressionSet (storageMode: lockedEnvironment)</span></span>
+<span><span class="co">## assayData: 33552 features, 6 samples </span></span>
+<span><span class="co">##   element names: exprs </span></span>
+<span><span class="co">## protocolData: none</span></span>
+<span><span class="co">## phenoData</span></span>
+<span><span class="co">##   sampleNames: GSM2194079 GSM2194080 ... GSM2194084 (6 total)</span></span>
+<span><span class="co">##   varLabels: title characteristics_ch1.1</span></span>
+<span><span class="co">##   varMetadata: labelDescription</span></span>
+<span><span class="co">## featureData</span></span>
+<span><span class="co">##   featureNames: 16657436 16657440 ... 17118478 (33552 total)</span></span>
+<span><span class="co">##   fvarLabels: PROBEID ENTREZID SYMBOL GENENAME</span></span>
+<span><span class="co">##   fvarMetadata: labelDescription</span></span>
+<span><span class="co">## experimentData: use 'experimentData(object)'</span></span>
+<span><span class="co">## Annotation: pd.hugene.2.0.st</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="expressionset-continued">ExpressionSet (continued)<a class="anchor" aria-label="anchor" href="#expressionset-continued"></a>
 </h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">exprs</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##          GSM2194079 GSM2194080 GSM2194081 GSM2194082 GSM2194083 GSM2194084</span>
-<span class="co">## 16657436   8.505158   9.046577   8.382674   9.115481   8.715343   8.566301</span>
-<span class="co">## 16657440   7.948860   8.191222   7.901911   8.459781   8.191793   8.219658</span>
-<span class="co">## 16657450  10.932934  11.228553  10.948120  11.462231  11.300046  11.300886</span>
-<span class="co">## 16657469   9.172462   9.344630   9.193450   9.465584   9.464020   9.135715</span>
-<span class="co">## 16657473   6.222049   6.551035   6.000246   6.398798   5.892654   5.592125</span>
-<span class="co">## 16657476   8.514300   8.474073   8.407196   8.811238   8.780833   8.874606</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">exprs</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##          GSM2194079 GSM2194080 GSM2194081 GSM2194082 GSM2194083 GSM2194084</span></span>
+<span><span class="co">## 16657436   8.505158   9.046577   8.382674   9.115481   8.715343   8.566301</span></span>
+<span><span class="co">## 16657440   7.948860   8.191222   7.901911   8.459781   8.191793   8.219658</span></span>
+<span><span class="co">## 16657450  10.932934  11.228553  10.948120  11.462231  11.300046  11.300886</span></span>
+<span><span class="co">## 16657469   9.172462   9.344630   9.193450   9.465584   9.464020   9.135715</span></span>
+<span><span class="co">## 16657473   6.222049   6.551035   6.000246   6.398798   5.892654   5.592125</span></span>
+<span><span class="co">## 16657476   8.514300   8.474073   8.407196   8.811238   8.780833   8.874606</span></span></code></pre>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">pData</span><span class="op">(</span><span class="fu">phenoData</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##                          title characteristics_ch1.1</span>
-<span class="co">## GSM2194079   SW620-miR625-rep1     shRNA: miR-625-3p</span>
-<span class="co">## GSM2194080   SW620-miR625-rep2     shRNA: miR-625-3p</span>
-<span class="co">## GSM2194081   SW620-miR625-rep3     shRNA: miR-625-3p</span>
-<span class="co">## GSM2194082 SW620-scramble-rep1       shRNA: scramble</span>
-<span class="co">## GSM2194083 SW620-scramble-rep2       shRNA: scramble</span>
-<span class="co">## GSM2194084 SW620-scramble-rep3       shRNA: scramble</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">pData</span><span class="op">(</span><span class="fu">phenoData</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##                          title characteristics_ch1.1</span></span>
+<span><span class="co">## GSM2194079   SW620-miR625-rep1     shRNA: miR-625-3p</span></span>
+<span><span class="co">## GSM2194080   SW620-miR625-rep2     shRNA: miR-625-3p</span></span>
+<span><span class="co">## GSM2194081   SW620-miR625-rep3     shRNA: miR-625-3p</span></span>
+<span><span class="co">## GSM2194082 SW620-scramble-rep1       shRNA: scramble</span></span>
+<span><span class="co">## GSM2194083 SW620-scramble-rep2       shRNA: scramble</span></span>
+<span><span class="co">## GSM2194084 SW620-scramble-rep3       shRNA: scramble</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="expressionset-continued-1">ExpressionSet (continued)<a class="anchor" aria-label="anchor" href="#expressionset-continued-1"></a>
 </h3>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">pData</span><span class="op">(</span><span class="fu">featureData</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##           PROBEID  ENTREZID      SYMBOL</span>
-<span class="co">## 16657436 16657436     84771     DDX11L2</span>
-<span class="co">## 16657440 16657440 100302278   MIR1302-2</span>
-<span class="co">## 16657450 16657450    402483   LINC01000</span>
-<span class="co">## 16657469 16657469    140849 LINC00266-1</span>
-<span class="co">## 16657473 16657473    729759      OR4F29</span>
-<span class="co">## 16657476 16657476    388574   RPL23AP87</span>
-<span class="co">##                                                   GENENAME</span>
-<span class="co">## 16657436                     DEAD/H-box helicase 11 like 2</span>
-<span class="co">## 16657440                                   microRNA 1302-2</span>
-<span class="co">## 16657450       long intergenic non-protein coding RNA 1000</span>
-<span class="co">## 16657469      long intergenic non-protein coding RNA 266-1</span>
-<span class="co">## 16657473 olfactory receptor family 4 subfamily F member 29</span>
-<span class="co">## 16657476              ribosomal protein L23a pseudogene 87</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">pData</span><span class="op">(</span><span class="fu">featureData</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##           PROBEID  ENTREZID      SYMBOL</span></span>
+<span><span class="co">## 16657436 16657436     84771     DDX11L2</span></span>
+<span><span class="co">## 16657440 16657440 100302278   MIR1302-2</span></span>
+<span><span class="co">## 16657450 16657450    402483   LINC01000</span></span>
+<span><span class="co">## 16657469 16657469    140849 LINC00266-1</span></span>
+<span><span class="co">## 16657473 16657473    729759      OR4F29</span></span>
+<span><span class="co">## 16657476 16657476    388574   RPL23AP87</span></span>
+<span><span class="co">##                                                   GENENAME</span></span>
+<span><span class="co">## 16657436                     DEAD/H-box helicase 11 like 2</span></span>
+<span><span class="co">## 16657440                                   microRNA 1302-2</span></span>
+<span><span class="co">## 16657450       long intergenic non-protein coding RNA 1000</span></span>
+<span><span class="co">## 16657469      long intergenic non-protein coding RNA 266-1</span></span>
+<span><span class="co">## 16657473 olfactory receptor family 4 subfamily F member 29</span></span>
+<span><span class="co">## 16657476              ribosomal protein L23a pseudogene 87</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="bioc-containers-vs-basic-structures">BioC containers vs basic structures<a class="anchor" aria-label="anchor" href="#bioc-containers-vs-basic-structures"></a>
@@ -373,20 +373,20 @@ unspecified</li>
 and want to know what the genes are. For purposes of this lab, we just
 select some IDs at random.</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">12345</span><span class="op">)</span>
-<span class="va">ids</span> <span class="op">&lt;-</span> <span class="fu">featureNames</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/Bimap-envirAPI.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">25000</span>, <span class="fl">5</span><span class="op">)</span><span class="op">]</span>
-<span class="va">ids</span></code></pre></div>
-<pre><code><span class="co">## [1] "16858710" "17001289" "16894087" "16813565" "16951883"</span></code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">12345</span><span class="op">)</span></span>
+<span><span class="va">ids</span> <span class="op">&lt;-</span> <span class="fu">featureNames</span><span class="op">(</span><span class="va">eset</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/Bimap-envirAPI.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">25000</span>, <span class="fl">5</span><span class="op">)</span><span class="op">]</span></span>
+<span><span class="va">ids</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] "16858710" "17001289" "16894087" "16813565" "16951883"</span></span></code></pre>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:1 mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">##    PROBEID      SYMBOL</span>
-<span class="co">## 1 16858710        JUNB</span>
-<span class="co">## 2 17001289 PPP2R2B-IT1</span>
-<span class="co">## 3 16894087   LINC01247</span>
-<span class="co">## 4 16813565   NR2F2-AS1</span>
-<span class="co">## 5 16951883     OSBPL10</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:1 mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">##    PROBEID      SYMBOL</span></span>
+<span><span class="co">## 1 16858710        JUNB</span></span>
+<span><span class="co">## 2 17001289 PPP2R2B-IT1</span></span>
+<span><span class="co">## 3 16894087   LINC01247</span></span>
+<span><span class="co">## 4 16813565   NR2F2-AS1</span></span>
+<span><span class="co">## 5 16951883     OSBPL10</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="questions">Questions!<a class="anchor" aria-label="anchor" href="#questions"></a>
@@ -409,40 +409,40 @@ long as you specify the keytype</p></li>
 <p>What keytypes or columns are available for a given annotation
 package?</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">keytypes</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS"</span>
-<span class="co">##  [6] "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL"  "GENENAME"    </span>
-<span class="co">## [11] "GENETYPE"     "GO"           "GOALL"        "IPI"          "MAP"         </span>
-<span class="co">## [16] "OMIM"         "ONTOLOGY"     "ONTOLOGYALL"  "PATH"         "PFAM"        </span>
-<span class="co">## [21] "PMID"         "PROBEID"      "PROSITE"      "REFSEQ"       "SYMBOL"      </span>
-<span class="co">## [26] "UCSCKG"       "UNIPROT"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">keytypes</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS"</span></span>
+<span><span class="co">##  [6] "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL"  "GENENAME"    </span></span>
+<span><span class="co">## [11] "GENETYPE"     "GO"           "GOALL"        "IPI"          "MAP"         </span></span>
+<span><span class="co">## [16] "OMIM"         "ONTOLOGY"     "ONTOLOGYALL"  "PATH"         "PFAM"        </span></span>
+<span><span class="co">## [21] "PMID"         "PROBEID"      "PROSITE"      "REFSEQ"       "SYMBOL"      </span></span>
+<span><span class="co">## [26] "UCSCKG"       "UNIPROT"</span></span></code></pre>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">columns</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS"</span>
-<span class="co">##  [6] "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL"  "GENENAME"    </span>
-<span class="co">## [11] "GENETYPE"     "GO"           "GOALL"        "IPI"          "MAP"         </span>
-<span class="co">## [16] "OMIM"         "ONTOLOGY"     "ONTOLOGYALL"  "PATH"         "PFAM"        </span>
-<span class="co">## [21] "PMID"         "PROBEID"      "PROSITE"      "REFSEQ"       "SYMBOL"      </span>
-<span class="co">## [26] "UCSCKG"       "UNIPROT"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">columns</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS"</span></span>
+<span><span class="co">##  [6] "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL"  "GENENAME"    </span></span>
+<span><span class="co">## [11] "GENETYPE"     "GO"           "GOALL"        "IPI"          "MAP"         </span></span>
+<span><span class="co">## [16] "OMIM"         "ONTOLOGY"     "ONTOLOGYALL"  "PATH"         "PFAM"        </span></span>
+<span><span class="co">## [21] "PMID"         "PROBEID"      "PROSITE"      "REFSEQ"       "SYMBOL"      </span></span>
+<span><span class="co">## [26] "UCSCKG"       "UNIPROT"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="another-example">Another example<a class="anchor" aria-label="anchor" href="#another-example"></a>
 </h3>
 <p>There is one issue with <code>select</code> however.</p>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">ids</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'16737401'</span>,<span class="st">'16657436'</span> ,<span class="st">'16678303'</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"SYMBOL"</span>,<span class="st">"MAP"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">##    PROBEID   SYMBOL     MAP</span>
-<span class="co">## 1 16737401    TRAF6   11p12</span>
-<span class="co">## 2 16657436  DDX11L1 1p36.33</span>
-<span class="co">## 3 16657436  DDX11L2  2q14.1</span>
-<span class="co">## 4 16657436  DDX11L9 15q26.3</span>
-<span class="co">## 5 16657436 DDX11L10 16p13.3</span>
-<span class="co">## 6 16657436  DDX11L5  9p24.3</span>
-<span class="co">## 7 16657436 DDX11L16    Xq28</span>
-<span class="co">## 8 16657436 DDX11L16    Yq12</span>
-<span class="co">## 9 16678303     ARF1 1q42.13</span></code></pre>
+<code class="sourceCode R"><span><span class="va">ids</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'16737401'</span>,<span class="st">'16657436'</span> ,<span class="st">'16678303'</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"SYMBOL"</span>,<span class="st">"MAP"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">##    PROBEID   SYMBOL     MAP</span></span>
+<span><span class="co">## 1 16737401    TRAF6   11p12</span></span>
+<span><span class="co">## 2 16657436  DDX11L1 1p36.33</span></span>
+<span><span class="co">## 3 16657436  DDX11L2  2q14.1</span></span>
+<span><span class="co">## 4 16657436  DDX11L9 15q26.3</span></span>
+<span><span class="co">## 5 16657436 DDX11L10 16p13.3</span></span>
+<span><span class="co">## 6 16657436  DDX11L5  9p24.3</span></span>
+<span><span class="co">## 7 16657436 DDX11L16    Xq28</span></span>
+<span><span class="co">## 8 16657436 DDX11L16    Yq12</span></span>
+<span><span class="co">## 9 16678303     ARF1 1q42.13</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="the-mapids-function">The <code>mapIds</code> function<a class="anchor" aria-label="anchor" href="#the-mapids-function"></a>
@@ -461,10 +461,10 @@ duplicates</p></li>
 </li>
 </ul>
 <div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">##  16737401  16657436  16678303 </span>
-<span class="co">##   "TRAF6" "DDX11L1"    "ARF1"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">##  16737401  16657436  16678303 </span></span>
+<span><span class="co">##   "TRAF6" "DDX11L1"    "ARF1"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="choices-for-multivals">Choices for multiVals<a class="anchor" aria-label="anchor" href="#choices-for-multivals"></a>
@@ -474,37 +474,37 @@ duplicates. Other choices are <code>list</code>,
 <code>CharacterList</code>, <code>filter</code>, <code>asNA</code> or a
 user-specified function.</p>
 <div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"list"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">## $`16737401`</span>
-<span class="co">## [1] "TRAF6"</span>
-<span class="co">## </span>
-<span class="co">## $`16657436`</span>
-<span class="co">## [1] "DDX11L1"  "DDX11L2"  "DDX11L9"  "DDX11L10" "DDX11L5"  "DDX11L16"</span>
-<span class="co">## </span>
-<span class="co">## $`16678303`</span>
-<span class="co">## [1] "ARF1"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"list"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">## $`16737401`</span></span>
+<span><span class="co">## [1] "TRAF6"</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $`16657436`</span></span>
+<span><span class="co">## [1] "DDX11L1"  "DDX11L2"  "DDX11L9"  "DDX11L10" "DDX11L5"  "DDX11L16"</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $`16678303`</span></span>
+<span><span class="co">## [1] "ARF1"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="choices-for-multivals-continued">Choices for multiVals (continued)<a class="anchor" aria-label="anchor" href="#choices-for-multivals-continued"></a>
 </h3>
 <div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"CharacterList"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">## CharacterList of length 3</span>
-<span class="co">## [["16737401"]] TRAF6</span>
-<span class="co">## [["16657436"]] DDX11L1 DDX11L2 DDX11L9 DDX11L10 DDX11L5 DDX11L16</span>
-<span class="co">## [["16678303"]] ARF1</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"CharacterList"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">## CharacterList of length 3</span></span>
+<span><span class="co">## [["16737401"]] TRAF6</span></span>
+<span><span class="co">## [["16657436"]] DDX11L1 DDX11L2 DDX11L9 DDX11L10 DDX11L5 DDX11L16</span></span>
+<span><span class="co">## [["16678303"]] ARF1</span></span></code></pre>
 <div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"filter"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">## 16737401 16678303 </span>
-<span class="co">##  "TRAF6"   "ARF1"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"filter"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">## 16737401 16678303 </span></span>
+<span><span class="co">##  "TRAF6"   "ARF1"</span></span></code></pre>
 <div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"asNA"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">## 16737401 16657436 16678303 </span>
-<span class="co">##  "TRAF6"       NA   "ARF1"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">mapIds</a></span><span class="op">(</span><span class="va">hugene20sttranscriptcluster.db</span>, <span class="va">ids</span>, <span class="st">"SYMBOL"</span>, <span class="st">"PROBEID"</span>, multiVals <span class="op">=</span> <span class="st">"asNA"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">## 16737401 16657436 16678303 </span></span>
+<span><span class="co">##  "TRAF6"       NA   "ARF1"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="chipdborgdb-questions">ChipDb/OrgDb questions<a class="anchor" aria-label="anchor" href="#chipdborgdb-questions"></a>
@@ -557,19 +557,19 @@ mappings</p>
 <p>As with ChipDb and OrgDb packages, <code>select</code> and
 <code>mapIds</code> can be used to make queries</p>
 <div class="sourceCode" id="cb36"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">TxDb.Hsapiens.UCSC.hg19.knownGene</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>,<span class="st">"10"</span><span class="op">)</span>,
-       <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"TXNAME"</span>,<span class="st">"TXCHROM"</span>,<span class="st">"TXSTART"</span>,<span class="st">"TXEND"</span><span class="op">)</span>, <span class="st">"GENEID"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">##   GENEID     TXNAME TXCHROM  TXSTART    TXEND</span>
-<span class="co">## 1      1 uc002qsd.4   chr19 58858172 58864865</span>
-<span class="co">## 2      1 uc002qsf.2   chr19 58859832 58874214</span>
-<span class="co">## 3     10 uc003wyw.1    chr8 18248755 18258723</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">TxDb.Hsapiens.UCSC.hg19.knownGene</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>,<span class="st">"10"</span><span class="op">)</span>,</span>
+<span>       <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"TXNAME"</span>,<span class="st">"TXCHROM"</span>,<span class="st">"TXSTART"</span>,<span class="st">"TXEND"</span><span class="op">)</span>, <span class="st">"GENEID"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">##   GENEID     TXNAME TXCHROM  TXSTART    TXEND</span></span>
+<span><span class="co">## 1      1 uc002qsd.4   chr19 58858172 58864865</span></span>
+<span><span class="co">## 2      1 uc002qsf.2   chr19 58859832 58874214</span></span>
+<span><span class="co">## 3     10 uc003wyw.1    chr8 18248755 18258723</span></span></code></pre>
 <div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v79</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>, <span class="st">"10"</span><span class="op">)</span>,
-       <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"GENEID"</span>,<span class="st">"GENENAME"</span>,<span class="st">"SEQNAME"</span>,<span class="st">"GENESEQSTART"</span>,<span class="st">"GENESEQEND"</span><span class="op">)</span>, <span class="st">"ENTREZID"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##   ENTREZID          GENEID GENENAME SEQNAME GENESEQSTART GENESEQEND</span>
-<span class="co">## 1        1 ENSG00000121410     A1BG      19     58345178   58353499</span>
-<span class="co">## 2       10 ENSG00000156006     NAT2       8     18391245   18401218</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v79</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>, <span class="st">"10"</span><span class="op">)</span>,</span>
+<span>       <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"GENEID"</span>,<span class="st">"GENENAME"</span>,<span class="st">"SEQNAME"</span>,<span class="st">"GENESEQSTART"</span>,<span class="st">"GENESEQEND"</span><span class="op">)</span>, <span class="st">"ENTREZID"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##   ENTREZID          GENEID GENENAME SEQNAME GENESEQSTART GENESEQEND</span></span>
+<span><span class="co">## 1        1 ENSG00000121410     A1BG      19     58345178   58353499</span></span>
+<span><span class="co">## 2       10 ENSG00000156006     NAT2       8     18391245   18401218</span></span></code></pre>
 <p>But this is not how one normally uses them…</p>
 </div>
 <div class="section level3">
@@ -579,30 +579,30 @@ mappings</p>
 information into a <code>GRanges</code> or <code>GRangesList</code>
 object. An example is the genomic position of all genes:</p>
 <div class="sourceCode" id="cb41"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gns</span> <span class="op">&lt;-</span> <span class="fu">genes</span><span class="op">(</span><span class="va">TxDb.Hsapiens.UCSC.hg19.knownGene</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##   403 genes were dropped because they have exons located on both strands</span>
-<span class="co">##   of the same reference sequence or on more than one reference sequence,</span>
-<span class="co">##   so cannot be represented by a single genomic range.</span>
-<span class="co">##   Use 'single.strand.genes.only=FALSE' to get all the genes in a</span>
-<span class="co">##   GRangesList object, or use suppressMessages() to suppress this message.</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gns</span> <span class="op">&lt;-</span> <span class="fu">genes</span><span class="op">(</span><span class="va">TxDb.Hsapiens.UCSC.hg19.knownGene</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##   403 genes were dropped because they have exons located on both strands</span></span>
+<span><span class="co">##   of the same reference sequence or on more than one reference sequence,</span></span>
+<span><span class="co">##   so cannot be represented by a single genomic range.</span></span>
+<span><span class="co">##   Use 'single.strand.genes.only=FALSE' to get all the genes in a</span></span>
+<span><span class="co">##   GRangesList object, or use suppressMessages() to suppress this message.</span></span></code></pre>
 <div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gns</span></code></pre></div>
-<pre><code><span class="co">## GRanges object with 23056 ranges and 1 metadata column:</span>
-<span class="co">##         seqnames              ranges strand |     gene_id</span>
-<span class="co">##            &lt;Rle&gt;           &lt;IRanges&gt;  &lt;Rle&gt; | &lt;character&gt;</span>
-<span class="co">##       1    chr19   58858172-58874214      - |           1</span>
-<span class="co">##      10     chr8   18248755-18258723      + |          10</span>
-<span class="co">##     100    chr20   43248163-43280376      - |         100</span>
-<span class="co">##    1000    chr18   25530930-25757445      - |        1000</span>
-<span class="co">##   10000     chr1 243651535-244006886      - |       10000</span>
-<span class="co">##     ...      ...                 ...    ... .         ...</span>
-<span class="co">##    9991     chr9 114979995-115095944      - |        9991</span>
-<span class="co">##    9992    chr21   35736323-35743440      + |        9992</span>
-<span class="co">##    9993    chr22   19023795-19109967      - |        9993</span>
-<span class="co">##    9994     chr6   90539619-90584155      + |        9994</span>
-<span class="co">##    9997    chr22   50961997-50964905      - |        9997</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gns</span></span></code></pre></div>
+<pre><code><span><span class="co">## GRanges object with 23056 ranges and 1 metadata column:</span></span>
+<span><span class="co">##         seqnames              ranges strand |     gene_id</span></span>
+<span><span class="co">##            &lt;Rle&gt;           &lt;IRanges&gt;  &lt;Rle&gt; | &lt;character&gt;</span></span>
+<span><span class="co">##       1    chr19   58858172-58874214      - |           1</span></span>
+<span><span class="co">##      10     chr8   18248755-18258723      + |          10</span></span>
+<span><span class="co">##     100    chr20   43248163-43280376      - |         100</span></span>
+<span><span class="co">##    1000    chr18   25530930-25757445      - |        1000</span></span>
+<span><span class="co">##   10000     chr1 243651535-244006886      - |       10000</span></span>
+<span><span class="co">##     ...      ...                 ...    ... .         ...</span></span>
+<span><span class="co">##    9991     chr9 114979995-115095944      - |        9991</span></span>
+<span><span class="co">##    9992    chr21   35736323-35743440      + |        9992</span></span>
+<span><span class="co">##    9993    chr22   19023795-19109967      - |        9993</span></span>
+<span><span class="co">##    9994     chr6   90539619-90584155      + |        9994</span></span>
+<span><span class="co">##    9997    chr22   50961997-50964905      - |        9997</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="grangeslist">GRangesList<a class="anchor" aria-label="anchor" href="#grangeslist"></a>
@@ -610,36 +610,36 @@ object. An example is the genomic position of all genes:</p>
 <p>Or the genomic position of all transcripts <strong>by</strong>
 gene:</p>
 <div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">txs</span> <span class="op">&lt;-</span> <span class="fu">transcriptsBy</span><span class="op">(</span><span class="va">TxDb.Hsapiens.UCSC.hg19.knownGene</span><span class="op">)</span>
-<span class="va">txs</span></code></pre></div>
-<pre><code><span class="co">## GRangesList object of length 23459:</span>
-<span class="co">## $`1`</span>
-<span class="co">## GRanges object with 2 ranges and 2 metadata columns:</span>
-<span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span>
-<span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span>
-<span class="co">##   [1]    chr19 58858172-58864865      - |     70455  uc002qsd.4</span>
-<span class="co">##   [2]    chr19 58859832-58874214      - |     70456  uc002qsf.2</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span>
-<span class="co">## </span>
-<span class="co">## $`10`</span>
-<span class="co">## GRanges object with 1 range and 2 metadata columns:</span>
-<span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span>
-<span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span>
-<span class="co">##   [1]     chr8 18248755-18258723      + |     31944  uc003wyw.1</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span>
-<span class="co">## </span>
-<span class="co">## $`100`</span>
-<span class="co">## GRanges object with 1 range and 2 metadata columns:</span>
-<span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span>
-<span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span>
-<span class="co">##   [1]    chr20 43248163-43280376      - |     72132  uc002xmj.3</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span>
-<span class="co">## </span>
-<span class="co">## ...</span>
-<span class="co">## &lt;23456 more elements&gt;</span></code></pre>
+<code class="sourceCode R"><span><span class="va">txs</span> <span class="op">&lt;-</span> <span class="fu">transcriptsBy</span><span class="op">(</span><span class="va">TxDb.Hsapiens.UCSC.hg19.knownGene</span><span class="op">)</span></span>
+<span><span class="va">txs</span></span></code></pre></div>
+<pre><code><span><span class="co">## GRangesList object of length 23459:</span></span>
+<span><span class="co">## $`1`</span></span>
+<span><span class="co">## GRanges object with 2 ranges and 2 metadata columns:</span></span>
+<span><span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span></span>
+<span><span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span></span>
+<span><span class="co">##   [1]    chr19 58858172-58864865      - |     70455  uc002qsd.4</span></span>
+<span><span class="co">##   [2]    chr19 58859832-58874214      - |     70456  uc002qsf.2</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $`10`</span></span>
+<span><span class="co">## GRanges object with 1 range and 2 metadata columns:</span></span>
+<span><span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span></span>
+<span><span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span></span>
+<span><span class="co">##   [1]     chr8 18248755-18258723      + |     31944  uc003wyw.1</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $`100`</span></span>
+<span><span class="co">## GRanges object with 1 range and 2 metadata columns:</span></span>
+<span><span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span></span>
+<span><span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span></span>
+<span><span class="co">##   [1]    chr20 43248163-43280376      - |     72132  uc002xmj.3</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## ...</span></span>
+<span><span class="co">## &lt;23456 more elements&gt;</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="other-accessors">Other accessors<a class="anchor" aria-label="anchor" href="#other-accessors"></a>
@@ -666,33 +666,33 @@ really powerful!</p>
 data.frames and lists, and can be subsetted using the <code>[</code>
 function. As a really artificial example:</p>
 <div class="sourceCode" id="cb47"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">txs</span><span class="op">[</span><span class="va">txs</span> <span class="op">%over%</span> <span class="va">gns</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span>,<span class="op">]</span><span class="op">]</span></code></pre></div>
-<pre><code><span class="co">## GRangesList object of length 3:</span>
-<span class="co">## $`1`</span>
-<span class="co">## GRanges object with 2 ranges and 2 metadata columns:</span>
-<span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span>
-<span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span>
-<span class="co">##   [1]    chr19 58858172-58864865      - |     70455  uc002qsd.4</span>
-<span class="co">##   [2]    chr19 58859832-58874214      - |     70456  uc002qsf.2</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span>
-<span class="co">## </span>
-<span class="co">## $`10`</span>
-<span class="co">## GRanges object with 1 range and 2 metadata columns:</span>
-<span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span>
-<span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span>
-<span class="co">##   [1]     chr8 18248755-18258723      + |     31944  uc003wyw.1</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span>
-<span class="co">## </span>
-<span class="co">## $`162968`</span>
-<span class="co">## GRanges object with 2 ranges and 2 metadata columns:</span>
-<span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span>
-<span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span>
-<span class="co">##   [1]    chr19 58865723-58874214      - |     70457  uc002qsh.2</span>
-<span class="co">##   [2]    chr19 58865723-58874214      - |     70458  uc002qsi.2</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></code></pre>
+<code class="sourceCode R"><span><span class="va">txs</span><span class="op">[</span><span class="va">txs</span> <span class="op">%over%</span> <span class="va">gns</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span>,<span class="op">]</span><span class="op">]</span></span></code></pre></div>
+<pre><code><span><span class="co">## GRangesList object of length 3:</span></span>
+<span><span class="co">## $`1`</span></span>
+<span><span class="co">## GRanges object with 2 ranges and 2 metadata columns:</span></span>
+<span><span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span></span>
+<span><span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span></span>
+<span><span class="co">##   [1]    chr19 58858172-58864865      - |     70455  uc002qsd.4</span></span>
+<span><span class="co">##   [2]    chr19 58859832-58874214      - |     70456  uc002qsf.2</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $`10`</span></span>
+<span><span class="co">## GRanges object with 1 range and 2 metadata columns:</span></span>
+<span><span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span></span>
+<span><span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span></span>
+<span><span class="co">##   [1]     chr8 18248755-18258723      + |     31944  uc003wyw.1</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $`162968`</span></span>
+<span><span class="co">## GRanges object with 2 ranges and 2 metadata columns:</span></span>
+<span><span class="co">##       seqnames            ranges strand |     tx_id     tx_name</span></span>
+<span><span class="co">##          &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt;</span></span>
+<span><span class="co">##   [1]    chr19 58865723-58874214      - |     70457  uc002qsh.2</span></span>
+<span><span class="co">##   [2]    chr19 58865723-58874214      - |     70458  uc002qsi.2</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="ranges-use-cases">*Ranges use cases<a class="anchor" aria-label="anchor" href="#ranges-use-cases"></a>
@@ -741,36 +741,36 @@ hg19 genome?</p>
 Inparanoid-based packages, and provides mappings between NCBI Gene IDs
 for two species.</p>
 <div class="sourceCode" id="cb49"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">Orthology.eg.db</span><span class="op">)</span>
-<span class="va">map</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Orthology.eg.db</span>, <span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">keys</a></span><span class="op">(</span><span class="va">org.Hs.eg.db</span><span class="op">)</span>, <span class="st">"Danio_rerio"</span>,<span class="st">"Homo_sapiens"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">map</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## [1] 66102     2</span></code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">Orthology.eg.db</span><span class="op">)</span></span>
+<span><span class="va">map</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Orthology.eg.db</span>, <span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">keys</a></span><span class="op">(</span><span class="va">org.Hs.eg.db</span><span class="op">)</span>, <span class="st">"Danio_rerio"</span>,<span class="st">"Homo_sapiens"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">map</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] 66102     2</span></span></code></pre>
 <div class="sourceCode" id="cb51"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span><span class="op">)</span>,<span class="op">]</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## [1] 10372     2</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span><span class="op">)</span>,<span class="op">]</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] 10372     2</span></span></code></pre>
 <div class="sourceCode" id="cb53"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span><span class="op">)</span>,<span class="op">]</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##    Homo_sapiens Danio_rerio</span>
-<span class="co">## 9            14      405874</span>
-<span class="co">## 11           16      324940</span>
-<span class="co">## 13           18      378968</span>
-<span class="co">## 15           20   100006090</span>
-<span class="co">## 16           21      564344</span>
-<span class="co">## 17           22      566515</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">map</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span><span class="op">)</span>,<span class="op">]</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##    Homo_sapiens Danio_rerio</span></span>
+<span><span class="co">## 9            14      405874</span></span>
+<span><span class="co">## 11           16      324940</span></span>
+<span><span class="co">## 13           18      378968</span></span>
+<span><span class="co">## 15           20   100006090</span></span>
+<span><span class="co">## 16           21      564344</span></span>
+<span><span class="co">## 17           22      566515</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="orthology-eg-db-package-1">Orthology.eg.db package<a class="anchor" aria-label="anchor" href="#orthology-eg-db-package-1"></a>
 </h3>
 <p>There are (currently) 368 species in this package.</p>
 <div class="sourceCode" id="cb55"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">species</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">keytypes</a></span><span class="op">(</span><span class="va">Orthology.eg.db</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## [1] 452</span></code></pre>
+<code class="sourceCode R"><span><span class="va">species</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">keytypes</a></span><span class="op">(</span><span class="va">Orthology.eg.db</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] 452</span></span></code></pre>
 <div class="sourceCode" id="cb57"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"rhino"</span>, <span class="va">species</span>, value <span class="op">=</span> <span class="cn">TRUE</span>, ignore.case <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## [1] "Buceros.rhinoceros.silvestris" "Rhinolophus.ferrumequinum"    </span>
-<span class="co">## [3] "Rhinolophus.sinicus"           "Rhinopithecus.bieti"          </span>
-<span class="co">## [5] "Rhinopithecus.roxellana"       "Sinocyclocheilus.rhinocerous"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"rhino"</span>, <span class="va">species</span>, value <span class="op">=</span> <span class="cn">TRUE</span>, ignore.case <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] "Buceros.rhinoceros.silvestris" "Rhinolophus.ferrumequinum"    </span></span>
+<span><span class="co">## [3] "Rhinolophus.sinicus"           "Rhinopithecus.bieti"          </span></span>
+<span><span class="co">## [5] "Rhinopithecus.roxellana"       "Sinocyclocheilus.rhinocerous"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organismdb-packages">OrganismDb packages<a class="anchor" aria-label="anchor" href="#organismdb-packages"></a>
@@ -780,18 +780,18 @@ and a GO.db package and allow cross-queries between those packages.</p>
 <p>All previous accessors work; <code>select</code>,
 <code>mapIds</code>, <code>transcripts</code>, etc.</p>
 <div class="sourceCode" id="cb59"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">Homo.sapiens</span><span class="op">)</span>
-<span class="va">Homo.sapiens</span></code></pre></div>
-<pre><code><span class="co">## OrganismDb Object:</span>
-<span class="co">## # Includes GODb Object:  GO.db </span>
-<span class="co">## # With data about:  Gene Ontology </span>
-<span class="co">## # Includes OrgDb Object:  org.Hs.eg.db </span>
-<span class="co">## # Gene data about:  Homo sapiens </span>
-<span class="co">## # Taxonomy Id:  9606 </span>
-<span class="co">## # Includes TxDb Object:  TxDb.Hsapiens.UCSC.hg19.knownGene </span>
-<span class="co">## # Transcriptome data about:  Homo sapiens </span>
-<span class="co">## # Based on genome:  hg19 </span>
-<span class="co">## # The OrgDb gene id ENTREZID is mapped to the TxDb gene id GENEID .</span></code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">Homo.sapiens</span><span class="op">)</span></span>
+<span><span class="va">Homo.sapiens</span></span></code></pre></div>
+<pre><code><span><span class="co">## OrganismDb Object:</span></span>
+<span><span class="co">## # Includes GODb Object:  GO.db </span></span>
+<span><span class="co">## # With data about:  Gene Ontology </span></span>
+<span><span class="co">## # Includes OrgDb Object:  org.Hs.eg.db </span></span>
+<span><span class="co">## # Gene data about:  Homo sapiens </span></span>
+<span><span class="co">## # Taxonomy Id:  9606 </span></span>
+<span><span class="co">## # Includes TxDb Object:  TxDb.Hsapiens.UCSC.hg19.knownGene </span></span>
+<span><span class="co">## # Transcriptome data about:  Homo sapiens </span></span>
+<span><span class="co">## # Based on genome:  hg19 </span></span>
+<span><span class="co">## # The OrgDb gene id ENTREZID is mapped to the TxDb gene id GENEID .</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organismdb-packages-1">OrganismDb packages<a class="anchor" aria-label="anchor" href="#organismdb-packages-1"></a>
@@ -802,28 +802,28 @@ and a GO.db package and allow cross-queries between those packages.</p>
 <li><p>Calls to TxDb accessors include a ‘columns’ argument</p></li>
 </ul>
 <div class="sourceCode" id="cb61"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">genes</a></span><span class="op">(</span><span class="va">Homo.sapiens</span>, columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ENTREZID"</span>,<span class="st">"ALIAS"</span>,<span class="st">"UNIPROT"</span><span class="op">)</span><span class="op">)</span>,<span class="fl">4</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##   403 genes were dropped because they have exons located on both strands</span>
-<span class="co">##   of the same reference sequence or on more than one reference sequence,</span>
-<span class="co">##   so cannot be represented by a single genomic range.</span>
-<span class="co">##   Use 'single.strand.genes.only=FALSE' to get all the genes in a</span>
-<span class="co">##   GRangesList object, or use suppressMessages() to suppress this message.</span></code></pre>
-<pre><code><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></code></pre>
-<pre><code><span class="co">## GRanges object with 4 ranges and 3 metadata columns:</span>
-<span class="co">##        seqnames            ranges strand |                  ALIAS</span>
-<span class="co">##           &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; |        &lt;CharacterList&gt;</span>
-<span class="co">##      1    chr19 58858172-58874214      - |        A1B,ABG,GAB,...</span>
-<span class="co">##     10     chr8 18248755-18258723      + |    AAC2,NAT-2,PNAT,...</span>
-<span class="co">##    100    chr20 43248163-43280376      - |               ADA1,ADA</span>
-<span class="co">##   1000    chr18 25530930-25757445      - | ACOGS,ARVD14,CD325,...</span>
-<span class="co">##                         UNIPROT        ENTREZID</span>
-<span class="co">##                 &lt;CharacterList&gt; &lt;CharacterList&gt;</span>
-<span class="co">##      1            P04217,V9HWD8               1</span>
-<span class="co">##     10            A4Z6T7,P11245              10</span>
-<span class="co">##    100 A0A0S2Z381,P00813,F5GWI4             100</span>
-<span class="co">##   1000        P19022,A0A024RC42            1000</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">genes</a></span><span class="op">(</span><span class="va">Homo.sapiens</span>, columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ENTREZID"</span>,<span class="st">"ALIAS"</span>,<span class="st">"UNIPROT"</span><span class="op">)</span><span class="op">)</span>,<span class="fl">4</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##   403 genes were dropped because they have exons located on both strands</span></span>
+<span><span class="co">##   of the same reference sequence or on more than one reference sequence,</span></span>
+<span><span class="co">##   so cannot be represented by a single genomic range.</span></span>
+<span><span class="co">##   Use 'single.strand.genes.only=FALSE' to get all the genes in a</span></span>
+<span><span class="co">##   GRangesList object, or use suppressMessages() to suppress this message.</span></span></code></pre>
+<pre><code><span><span class="co">## 'select()' returned 1:many mapping between keys and columns</span></span></code></pre>
+<pre><code><span><span class="co">## GRanges object with 4 ranges and 3 metadata columns:</span></span>
+<span><span class="co">##        seqnames            ranges strand |                  ALIAS</span></span>
+<span><span class="co">##           &lt;Rle&gt;         &lt;IRanges&gt;  &lt;Rle&gt; |        &lt;CharacterList&gt;</span></span>
+<span><span class="co">##      1    chr19 58858172-58874214      - |        A1B,ABG,GAB,...</span></span>
+<span><span class="co">##     10     chr8 18248755-18258723      + |    AAC2,NAT-2,PNAT,...</span></span>
+<span><span class="co">##    100    chr20 43248163-43280376      - |               ADA1,ADA</span></span>
+<span><span class="co">##   1000    chr18 25530930-25757445      - | ACOGS,ARVD14,CD325,...</span></span>
+<span><span class="co">##                         UNIPROT        ENTREZID</span></span>
+<span><span class="co">##                 &lt;CharacterList&gt; &lt;CharacterList&gt;</span></span>
+<span><span class="co">##      1            P04217,V9HWD8               1</span></span>
+<span><span class="co">##     10            A4Z6T7,P11245              10</span></span>
+<span><span class="co">##    100 A0A0S2Z381,P00813,F5GWI4             100</span></span>
+<span><span class="co">##   1000        P19022,A0A024RC42            1000</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 93 sequences (1 circular) from hg19 genome</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organismdb-exercises">OrganismDb exercises<a class="anchor" aria-label="anchor" href="#organismdb-exercises"></a>
@@ -848,88 +848,88 @@ local database.</p></li>
 <li>
 <code><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">keytypes()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select()</a></code>, …</li>
 <li>
-<code><a href="https://rdrr.io/pkg/Organism.dplyr/man/Genomic-Extractors.html" class="external-link">exons()</a></code>, <code><a href="https://rdrr.io/pkg/IRanges/man/intra-range-methods.html" class="external-link">promoters()</a></code>, …</li>
+<code><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">exons()</a></code>, <code><a href="https://rdrr.io/pkg/IRanges/man/intra-range-methods.html" class="external-link">promoters()</a></code>, …</li>
 </ul>
 </li>
 <li><p>Allows for filtering and display of combined TxDb and Org.Db
 information through <code>dplyr</code> functions.</p></li>
 </ul>
 <div class="sourceCode" id="cb65"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">Organism.dplyr</span><span class="op">)</span>
-
-<span class="co"># src = src_organism("TxDb.Hsapiens.UCSC.hg19.knownGene")</span>
-<span class="va">src</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/Organism.dplyr/man/src.html" class="external-link">src_organism</a></span><span class="op">(</span>dbpath <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Organism.dplyr/man/utils.html" class="external-link">hg38light</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>
-<span class="va">src</span></code></pre></div>
-<pre><code><span class="co">## src:  sqlite 3.38.5 [/usr/local/lib/R/site-library/Organism.dplyr/extdata/light.hg38.knownGene.sqlite]</span>
-<span class="co">## tbls: id, id_accession, id_go, id_go_all, id_omim_pm, id_protein,</span>
-<span class="co">##   id_transcript, ranges_cds, ranges_exon, ranges_gene, ranges_tx</span></code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">Organism.dplyr</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># src = src_organism("TxDb.Hsapiens.UCSC.hg19.knownGene")</span></span>
+<span><span class="va">src</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/Organism.dplyr/man/src.html" class="external-link">src_organism</a></span><span class="op">(</span>dbpath <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Organism.dplyr/man/utils.html" class="external-link">hg38light</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">src</span></span></code></pre></div>
+<pre><code><span><span class="co">## src:  sqlite 3.38.5 [/usr/local/lib/R/site-library/Organism.dplyr/extdata/light.hg38.knownGene.sqlite]</span></span>
+<span><span class="co">## tbls: id, id_accession, id_go, id_go_all, id_omim_pm, id_protein,</span></span>
+<span><span class="co">##   id_transcript, ranges_cds, ranges_exon, ranges_gene, ranges_tx</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organism-dplyr">Organism.dplyr<a class="anchor" aria-label="anchor" href="#organism-dplyr"></a>
 </h3>
 <p>Get promoters from a TxDb object (we use a small version)</p>
 <div class="sourceCode" id="cb67"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>width <span class="op">=</span> <span class="fl">120</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/Organism.dplyr/man/Genomic-Extractors.html" class="external-link">promoters</a></span><span class="op">(</span><span class="va">src</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## GRanges object with 111 ranges and 2 metadata columns:</span>
-<span class="co">##                                 seqnames              ranges strand |     tx_id           tx_name</span>
-<span class="co">##                                    &lt;Rle&gt;           &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt;       &lt;character&gt;</span>
-<span class="co">##   ENST00000336199.9                 chr1 243843037-243845236      - |     21341 ENST00000336199.9</span>
-<span class="co">##   ENST00000366540.5                 chr1 243843385-243845584      - |     21342 ENST00000366540.5</span>
-<span class="co">##   ENST00000673466.1                 chr1 243850044-243852243      - |     21343 ENST00000673466.1</span>
-<span class="co">##   ENST00000679831.1                 chr1 243565479-243567678      - |     21344 ENST00000679831.1</span>
-<span class="co">##   ENST00000680118.1                 chr1 243842980-243845179      - |     21345 ENST00000680118.1</span>
-<span class="co">##                 ...                  ...                 ...    ... .       ...               ...</span>
-<span class="co">##   ENST00000642929.1 chr11_KZ559110v1_alt         38852-41051      + |    258221 ENST00000642929.1</span>
-<span class="co">##   ENST00000644696.1 chr11_KZ559110v1_alt         38861-41060      + |    258222 ENST00000644696.1</span>
-<span class="co">##   ENST00000646644.1 chr11_KZ559110v1_alt         39187-41386      + |    258223 ENST00000646644.1</span>
-<span class="co">##   ENST00000645918.1 chr11_KZ559110v1_alt         66615-68814      + |    258224 ENST00000645918.1</span>
-<span class="co">##   ENST00000611446.1     chrUn_GL000220v1       110025-112224      + |    266058 ENST00000611446.1</span>
-<span class="co">##   -------</span>
-<span class="co">##   seqinfo: 640 sequences (1 circular) from hg38 genome</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>width <span class="op">=</span> <span class="fl">120</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/IRanges/man/intra-range-methods.html" class="external-link">promoters</a></span><span class="op">(</span><span class="va">src</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## GRanges object with 111 ranges and 2 metadata columns:</span></span>
+<span><span class="co">##                                 seqnames              ranges strand |     tx_id           tx_name</span></span>
+<span><span class="co">##                                    &lt;Rle&gt;           &lt;IRanges&gt;  &lt;Rle&gt; | &lt;integer&gt;       &lt;character&gt;</span></span>
+<span><span class="co">##   ENST00000336199.9                 chr1 243843037-243845236      - |     21341 ENST00000336199.9</span></span>
+<span><span class="co">##   ENST00000366540.5                 chr1 243843385-243845584      - |     21342 ENST00000366540.5</span></span>
+<span><span class="co">##   ENST00000673466.1                 chr1 243850044-243852243      - |     21343 ENST00000673466.1</span></span>
+<span><span class="co">##   ENST00000679831.1                 chr1 243565479-243567678      - |     21344 ENST00000679831.1</span></span>
+<span><span class="co">##   ENST00000680118.1                 chr1 243842980-243845179      - |     21345 ENST00000680118.1</span></span>
+<span><span class="co">##                 ...                  ...                 ...    ... .       ...               ...</span></span>
+<span><span class="co">##   ENST00000642929.1 chr11_KZ559110v1_alt         38852-41051      + |    258221 ENST00000642929.1</span></span>
+<span><span class="co">##   ENST00000644696.1 chr11_KZ559110v1_alt         38861-41060      + |    258222 ENST00000644696.1</span></span>
+<span><span class="co">##   ENST00000646644.1 chr11_KZ559110v1_alt         39187-41386      + |    258223 ENST00000646644.1</span></span>
+<span><span class="co">##   ENST00000645918.1 chr11_KZ559110v1_alt         66615-68814      + |    258224 ENST00000645918.1</span></span>
+<span><span class="co">##   ENST00000611446.1     chrUn_GL000220v1       110025-112224      + |    266058 ENST00000611446.1</span></span>
+<span><span class="co">##   -------</span></span>
+<span><span class="co">##   seqinfo: 640 sequences (1 circular) from hg38 genome</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organism-dplyr-1">Organism.dplyr<a class="anchor" aria-label="anchor" href="#organism-dplyr-1"></a>
 </h3>
 <p>Extract a table from the underlying database</p>
 <div class="sourceCode" id="cb69"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://dplyr.tidyverse.org/reference/tbl.html" class="external-link">tbl</a></span><span class="op">(</span><span class="va">src</span>, <span class="st">"id"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## <span style="color: #949494;"># Source:   table&lt;id&gt; [?? x 6]</span></span>
-<span class="co">## <span style="color: #949494;"># Database: sqlite 3.38.5 []</span></span>
-<span class="co">##    entrez map      ensembl         symbol genename               alias   </span>
-<span class="co">##    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span>
-<span class="co">## <span style="color: #BCBCBC;"> 1</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein A1B     </span>
-<span class="co">## <span style="color: #BCBCBC;"> 2</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein ABG     </span>
-<span class="co">## <span style="color: #BCBCBC;"> 3</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein GAB     </span>
-<span class="co">## <span style="color: #BCBCBC;"> 4</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein HYST2477</span>
-<span class="co">## <span style="color: #BCBCBC;"> 5</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein A1BG    </span>
-<span class="co">## <span style="color: #BCBCBC;"> 6</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  AAC2    </span>
-<span class="co">## <span style="color: #BCBCBC;"> 7</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  NAT-2   </span>
-<span class="co">## <span style="color: #BCBCBC;"> 8</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  PNAT    </span>
-<span class="co">## <span style="color: #BCBCBC;"> 9</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  NAT2    </span>
-<span class="co">## <span style="color: #BCBCBC;">10</span> 100    20q13.12 ENSG00000196839 ADA    adenosine deaminase    ADA1    </span>
-<span class="co">## <span style="color: #949494;"># … with more rows</span></span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/tbl.html" class="external-link">tbl</a></span><span class="op">(</span><span class="va">src</span>, <span class="st">"id"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## <span style="color: #949494;"># Source:   table&lt;id&gt; [?? x 6]</span></span></span>
+<span><span class="co">## <span style="color: #949494;"># Database: sqlite 3.38.5 []</span></span></span>
+<span><span class="co">##    entrez map      ensembl         symbol genename               alias   </span></span>
+<span><span class="co">##    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 1</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein A1B     </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 2</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein ABG     </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 3</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein GAB     </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 4</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein HYST2477</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 5</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein A1BG    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 6</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  AAC2    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 7</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  NAT-2   </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 8</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  PNAT    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;"> 9</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  NAT2    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">10</span> 100    20q13.12 ENSG00000196839 ADA    adenosine deaminase    ADA1    </span></span>
+<span><span class="co">## <span style="color: #949494;"># … with more rows</span></span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organism-dplyr-2">Organism.dplyr<a class="anchor" aria-label="anchor" href="#organism-dplyr-2"></a>
 </h3>
 <p>Make a complex query between tables in the underlying database</p>
 <div class="sourceCode" id="cb71"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">inner_join</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/tbl.html" class="external-link">tbl</a></span><span class="op">(</span><span class="va">src</span>, <span class="st">"id"</span><span class="op">)</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/tbl.html" class="external-link">tbl</a></span><span class="op">(</span><span class="va">src</span>, <span class="st">"ranges_gene"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-            <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">symbol</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ADA"</span>, <span class="st">"NAT2"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-            <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">gene_chrom</span>, <span class="va">gene_start</span>, <span class="va">gene_end</span>,
-            <span class="va">gene_strand</span>, <span class="va">symbol</span>, <span class="va">alias</span>, <span class="va">map</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## Joining, by = "entrez"</span></code></pre>
-<pre><code><span class="co">## <span style="color: #949494;"># Source:   lazy query [?? x 7]</span></span>
-<span class="co">## <span style="color: #949494;"># Database: sqlite 3.38.5 []</span></span>
-<span class="co">##   gene_chrom gene_start gene_end gene_strand symbol alias map     </span>
-<span class="co">##   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span>
-<span class="co">## <span style="color: #BCBCBC;">1</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   AAC2  8p22    </span>
-<span class="co">## <span style="color: #BCBCBC;">2</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   NAT-2 8p22    </span>
-<span class="co">## <span style="color: #BCBCBC;">3</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   PNAT  8p22    </span>
-<span class="co">## <span style="color: #BCBCBC;">4</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   NAT2  8p22    </span>
-<span class="co">## <span style="color: #BCBCBC;">5</span> chr20        44<span style="text-decoration: underline;">619</span>522 44<span style="text-decoration: underline;">652</span>233 -           ADA    ADA1  20q13.12</span>
-<span class="co">## <span style="color: #BCBCBC;">6</span> chr20        44<span style="text-decoration: underline;">619</span>522 44<span style="text-decoration: underline;">652</span>233 -           ADA    ADA   20q13.12</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">inner_join</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/tbl.html" class="external-link">tbl</a></span><span class="op">(</span><span class="va">src</span>, <span class="st">"id"</span><span class="op">)</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/tbl.html" class="external-link">tbl</a></span><span class="op">(</span><span class="va">src</span>, <span class="st">"ranges_gene"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>            <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">symbol</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"ADA"</span>, <span class="st">"NAT2"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>            <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">gene_chrom</span>, <span class="va">gene_start</span>, <span class="va">gene_end</span>,</span>
+<span>            <span class="va">gene_strand</span>, <span class="va">symbol</span>, <span class="va">alias</span>, <span class="va">map</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## Joining, by = "entrez"</span></span></code></pre>
+<pre><code><span><span class="co">## <span style="color: #949494;"># Source:   SQL [6 x 7]</span></span></span>
+<span><span class="co">## <span style="color: #949494;"># Database: sqlite 3.38.5 []</span></span></span>
+<span><span class="co">##   gene_chrom gene_start gene_end gene_strand symbol alias map     </span></span>
+<span><span class="co">##   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">1</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   AAC2  8p22    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">2</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   NAT-2 8p22    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">3</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   PNAT  8p22    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">4</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   NAT2  8p22    </span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">5</span> chr20        44<span style="text-decoration: underline;">619</span>522 44<span style="text-decoration: underline;">652</span>233 -           ADA    ADA1  20q13.12</span></span>
+<span><span class="co">## <span style="color: #BCBCBC;">6</span> chr20        44<span style="text-decoration: underline;">619</span>522 44<span style="text-decoration: underline;">652</span>233 -           ADA    ADA   20q13.12</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organism-dplyr-exercises">Organism.dplyr exercises<a class="anchor" aria-label="anchor" href="#organism-dplyr-exercises"></a>
@@ -951,41 +951,41 @@ Organism.dplyr?</p></li>
 species/build. There are many such packages - you can get a listing
 using <code>available.genomes</code></p>
 <div class="sourceCode" id="cb74"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://bioconductor.org/packages/BSgenome" class="external-link">BSgenome</a></span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/S4Vectors/man/Vector-class.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/BSgenome/man/available.genomes.html" class="external-link">available.genomes</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 'getOption("repos")' replaces Bioconductor standard repositories, see '?repositories' for details</span>
-<span class="co">## </span>
-<span class="co">## replacement repositories:</span>
-<span class="co">##     CRAN: https://packagemanager.rstudio.com/cran/__linux__/focal/latest</span></code></pre>
-<pre><code><span class="co">## [1] "BSgenome.Alyrata.JGI.v1"                 "BSgenome.Amellifera.BeeBase.assembly4"  </span>
-<span class="co">## [3] "BSgenome.Amellifera.NCBI.AmelHAv3.1"     "BSgenome.Amellifera.UCSC.apiMel2"       </span>
-<span class="co">## [5] "BSgenome.Amellifera.UCSC.apiMel2.masked" "BSgenome.Aofficinalis.NCBI.V1"</span></code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://bioconductor.org/packages/BSgenome" class="external-link">BSgenome</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/BSgenome/man/available.genomes.html" class="external-link">available.genomes</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 'getOption("repos")' replaces Bioconductor standard repositories, see '?repositories' for details</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## replacement repositories:</span></span>
+<span><span class="co">##     CRAN: https://packagemanager.rstudio.com/cran/__linux__/focal/2022-06-22</span></span></code></pre>
+<pre><code><span><span class="co">## [1] "BSgenome.Alyrata.JGI.v1"                 "BSgenome.Amellifera.BeeBase.assembly4"  </span></span>
+<span><span class="co">## [3] "BSgenome.Amellifera.NCBI.AmelHAv3.1"     "BSgenome.Amellifera.UCSC.apiMel2"       </span></span>
+<span><span class="co">## [5] "BSgenome.Amellifera.UCSC.apiMel2.masked" "BSgenome.Aofficinalis.NCBI.V1"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="bsgenome-packages-1">BSgenome packages<a class="anchor" aria-label="anchor" href="#bsgenome-packages-1"></a>
 </h3>
 <p>We can load and inspect a BSgenome package</p>
 <div class="sourceCode" id="cb77"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">BSgenome.Hsapiens.UCSC.hg19</span><span class="op">)</span>
-<span class="va">Hsapiens</span></code></pre></div>
-<pre><code><span class="co">## Human genome:</span>
-<span class="co">## # organism: Homo sapiens (Human)</span>
-<span class="co">## # genome: hg19</span>
-<span class="co">## # provider: UCSC</span>
-<span class="co">## # release date: June 2013</span>
-<span class="co">## # 298 sequences:</span>
-<span class="co">## #   chr1                  chr2                  chr3                  chr4                  chr5                 </span>
-<span class="co">## #   chr6                  chr7                  chr8                  chr9                  chr10                </span>
-<span class="co">## #   chr11                 chr12                 chr13                 chr14                 chr15                </span>
-<span class="co">## #   chr16                 chr17                 chr18                 chr19                 chr20                </span>
-<span class="co">## #   chr21                 chr22                 chrX                  chrY                  chrM                 </span>
-<span class="co">## #   ...                   ...                   ...                   ...                   ...                  </span>
-<span class="co">## #   chr18_gl383570_alt    chr18_gl383571_alt    chr18_gl383572_alt    chr19_gl383573_alt    chr19_gl383574_alt   </span>
-<span class="co">## #   chr19_gl383575_alt    chr19_gl383576_alt    chr19_gl949746_alt    chr19_gl949747_alt    chr19_gl949748_alt   </span>
-<span class="co">## #   chr19_gl949749_alt    chr19_gl949750_alt    chr19_gl949751_alt    chr19_gl949752_alt    chr19_gl949753_alt   </span>
-<span class="co">## #   chr20_gl383577_alt    chr21_gl383578_alt    chr21_gl383579_alt    chr21_gl383580_alt    chr21_gl383581_alt   </span>
-<span class="co">## #   chr22_gl383582_alt    chr22_gl383583_alt    chr22_kb663609_alt                                               </span>
-<span class="co">## # (use 'seqnames()' to see all the sequence names, use the '$' or '[[' operator to access a given sequence)</span></code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">BSgenome.Hsapiens.UCSC.hg19</span><span class="op">)</span></span>
+<span><span class="va">Hsapiens</span></span></code></pre></div>
+<pre><code><span><span class="co">## Human genome:</span></span>
+<span><span class="co">## # organism: Homo sapiens (Human)</span></span>
+<span><span class="co">## # genome: hg19</span></span>
+<span><span class="co">## # provider: UCSC</span></span>
+<span><span class="co">## # release date: June 2013</span></span>
+<span><span class="co">## # 298 sequences:</span></span>
+<span><span class="co">## #   chr1                  chr2                  chr3                  chr4                  chr5                 </span></span>
+<span><span class="co">## #   chr6                  chr7                  chr8                  chr9                  chr10                </span></span>
+<span><span class="co">## #   chr11                 chr12                 chr13                 chr14                 chr15                </span></span>
+<span><span class="co">## #   chr16                 chr17                 chr18                 chr19                 chr20                </span></span>
+<span><span class="co">## #   chr21                 chr22                 chrX                  chrY                  chrM                 </span></span>
+<span><span class="co">## #   ...                   ...                   ...                   ...                   ...                  </span></span>
+<span><span class="co">## #   chr18_gl383570_alt    chr18_gl383571_alt    chr18_gl383572_alt    chr19_gl383573_alt    chr19_gl383574_alt   </span></span>
+<span><span class="co">## #   chr19_gl383575_alt    chr19_gl383576_alt    chr19_gl949746_alt    chr19_gl949747_alt    chr19_gl949748_alt   </span></span>
+<span><span class="co">## #   chr19_gl949749_alt    chr19_gl949750_alt    chr19_gl949751_alt    chr19_gl949752_alt    chr19_gl949753_alt   </span></span>
+<span><span class="co">## #   chr20_gl383577_alt    chr21_gl383578_alt    chr21_gl383579_alt    chr21_gl383580_alt    chr21_gl383581_alt   </span></span>
+<span><span class="co">## #   chr22_gl383582_alt    chr22_gl383583_alt    chr22_kb663609_alt                                               </span></span>
+<span><span class="co">## # (use 'seqnames()' to see all the sequence names, use the '$' or '[[' operator to access a given sequence)</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="bsgenome-packages-2">BSgenome packages<a class="anchor" aria-label="anchor" href="#bsgenome-packages-2"></a>
@@ -994,14 +994,14 @@ using <code>available.genomes</code></p>
 sequence (e.g., entire chromosome or unplaced scaffold), or by passing
 in a GRanges object, to get just a region.</p>
 <div class="sourceCode" id="cb79"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/BSgenome/man/getSeq-methods.html" class="external-link">getSeq</a></span><span class="op">(</span><span class="va">Hsapiens</span>, <span class="st">"chr1"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## 249250621-letter DNAString object</span>
-<span class="co">## seq: <span style="color: #EEEEEE; background-color: #B2B2B2;">NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span>...<span style="color: #EEEEEE; background-color: #B2B2B2;">NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span></span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/Biostrings/man/getSeq.html" class="external-link">getSeq</a></span><span class="op">(</span><span class="va">Hsapiens</span>, <span class="st">"chr1"</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## 249250621-letter DNAString object</span></span>
+<span><span class="co">## seq: <span style="color: #EEEEEE; background-color: #B2B2B2;">NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span>...<span style="color: #EEEEEE; background-color: #B2B2B2;">NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span></span></span></code></pre>
 <div class="sourceCode" id="cb81"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/BSgenome/man/getSeq-methods.html" class="external-link">getSeq</a></span><span class="op">(</span><span class="va">Hsapiens</span>, <span class="va">gns</span><span class="op">[</span><span class="st">"5467"</span>,<span class="op">]</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## DNAStringSet object of length 1:</span>
-<span class="co">##     width seq                                                                                       names               </span>
-<span class="co">## [1] 85634 <span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #AFFFAF;">CC</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">CC</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">CC</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">GGGG</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #FFD7AF;">TT</span><span style="color: #000000; background-color: #FFAFAF;">AA</span>...<span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">TTT</span><span style="color: #000000; background-color: #FFAFAF;">AAA</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #FFAFAF;">AAA</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">GGG</span><span style="color: #000000; background-color: #FFAFAF;">AA</span><span style="color: #000000; background-color: #FFD7AF;">TT</span><span style="color: #000000; background-color: #FFAFAF;">AAA</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #FFD7AF;">TTT</span><span style="color: #000000; background-color: #FFAFAF;">AA</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #FFAFAF;">AA</span> 5467</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/Biostrings/man/getSeq.html" class="external-link">getSeq</a></span><span class="op">(</span><span class="va">Hsapiens</span>, <span class="va">gns</span><span class="op">[</span><span class="st">"5467"</span>,<span class="op">]</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## DNAStringSet object of length 1:</span></span>
+<span><span class="co">##     width seq                                                                                       names               </span></span>
+<span><span class="co">## [1] 85634 <span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #AFFFAF;">CC</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">CC</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">CC</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">GGGG</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #FFD7AF;">TT</span><span style="color: #000000; background-color: #FFAFAF;">AA</span>...<span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">TTT</span><span style="color: #000000; background-color: #FFAFAF;">AAA</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #FFAFAF;">AAA</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">GGG</span><span style="color: #000000; background-color: #FFAFAF;">AA</span><span style="color: #000000; background-color: #FFD7AF;">TT</span><span style="color: #000000; background-color: #FFAFAF;">AAA</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #FFD7AF;">TTT</span><span style="color: #000000; background-color: #FFAFAF;">AA</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">G</span><span style="color: #000000; background-color: #FFAFAF;">A</span><span style="color: #000000; background-color: #AFFFAF;">C</span><span style="color: #000000; background-color: #FFD7AF;">T</span><span style="color: #000000; background-color: #AFFFFF;">GG</span><span style="color: #000000; background-color: #FFAFAF;">AA</span> 5467</span></span></code></pre>
 <p>The Biostrings package contains most of the code for dealing with
 these <code>*StringSet</code> objects - please see the Biostrings
 vignettes and help pages for more information.</p>
@@ -1020,32 +1020,32 @@ vignettes and help pages for more information.</p>
 different annotation objects, without having to explicitly install
 them.</p>
 <div class="sourceCode" id="cb83"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">AnnotationHub</span><span class="op">)</span>
-<span class="va">hub</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">AnnotationHub</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## snapshotDate(): 2022-05-13</span></code></pre>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">AnnotationHub</span><span class="op">)</span></span>
+<span><span class="va">hub</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">AnnotationHub</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## snapshotDate(): 2022-07-11</span></span></code></pre>
 <div class="sourceCode" id="cb85"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">hub</span></code></pre></div>
-<pre><code><span class="co">## AnnotationHub with 64948 records</span>
-<span class="co">## # snapshotDate(): 2022-05-13</span>
-<span class="co">## # $dataprovider: Ensembl, BroadInstitute, UCSC, ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/, Haemcode, FANTOM5,DLRP,IUPHAR...</span>
-<span class="co">## # $species: Homo sapiens, Mus musculus, Drosophila melanogaster, Bos taurus, Rattus norvegicus, Pan troglodytes, Dan...</span>
-<span class="co">## # $rdataclass: GRanges, TwoBitFile, BigWigFile, EnsDb, Rle, OrgDb, ChainFile, SQLiteFile, TxDb, Inparanoid8Db</span>
-<span class="co">## # additional mcols(): taxonomyid, genome, description, coordinate_1_based, maintainer, rdatadateadded,</span>
-<span class="co">## #   preparerclass, tags, rdatapath, sourceurl, sourcetype </span>
-<span class="co">## # retrieve records with, e.g., 'object[["AH5012"]]' </span>
-<span class="co">## </span>
-<span class="co">##              title                                                         </span>
-<span class="co">##   AH5012   | Chromosome Band                                               </span>
-<span class="co">##   AH5013   | STS Markers                                                   </span>
-<span class="co">##   AH5014   | FISH Clones                                                   </span>
-<span class="co">##   AH5015   | Recomb Rate                                                   </span>
-<span class="co">##   AH5016   | ENCODE Pilot                                                  </span>
-<span class="co">##   ...        ...                                                           </span>
-<span class="co">##   AH104604 | Zonotrichia_albicollis.Zonotrichia_albicollis-1.0.1.ncrna.2bit</span>
-<span class="co">##   AH104605 | Zosterops_lateralis_melanops.ASM128173v1.cdna.all.2bit        </span>
-<span class="co">##   AH104606 | Zosterops_lateralis_melanops.ASM128173v1.dna_rm.toplevel.2bit </span>
-<span class="co">##   AH104607 | Zosterops_lateralis_melanops.ASM128173v1.dna_sm.toplevel.2bit </span>
-<span class="co">##   AH104608 | Zosterops_lateralis_melanops.ASM128173v1.ncrna.2bit</span></code></pre>
+<code class="sourceCode R"><span><span class="va">hub</span></span></code></pre></div>
+<pre><code><span><span class="co">## AnnotationHub with 65055 records</span></span>
+<span><span class="co">## # snapshotDate(): 2022-07-11</span></span>
+<span><span class="co">## # $dataprovider: Ensembl, BroadInstitute, UCSC, ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/, Haemcode, FANTOM5,DLRP,IUPHAR...</span></span>
+<span><span class="co">## # $species: Homo sapiens, Mus musculus, Drosophila melanogaster, Bos taurus, Rattus norvegicus, Pan troglodytes, Dan...</span></span>
+<span><span class="co">## # $rdataclass: GRanges, TwoBitFile, BigWigFile, EnsDb, Rle, OrgDb, ChainFile, SQLiteFile, TxDb, Inparanoid8Db</span></span>
+<span><span class="co">## # additional mcols(): taxonomyid, genome, description, coordinate_1_based, maintainer, rdatadateadded,</span></span>
+<span><span class="co">## #   preparerclass, tags, rdatapath, sourceurl, sourcetype </span></span>
+<span><span class="co">## # retrieve records with, e.g., 'object[["AH5012"]]' </span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">##              title                                           </span></span>
+<span><span class="co">##   AH5012   | Chromosome Band                                 </span></span>
+<span><span class="co">##   AH5013   | STS Markers                                     </span></span>
+<span><span class="co">##   AH5014   | FISH Clones                                     </span></span>
+<span><span class="co">##   AH5015   | Recomb Rate                                     </span></span>
+<span><span class="co">##   AH5016   | ENCODE Pilot                                    </span></span>
+<span><span class="co">##   ...        ...                                             </span></span>
+<span><span class="co">##   AH104711 | phyloP35way.UCSC.mm39.chrY.rds                  </span></span>
+<span><span class="co">##   AH104712 | phyloP35way.UCSC.mm39.chrY_JH584300v1_random.rds</span></span>
+<span><span class="co">##   AH104713 | phyloP35way.UCSC.mm39.chrY_JH584301v1_random.rds</span></span>
+<span><span class="co">##   AH104714 | phyloP35way.UCSC.mm39.chrY_JH584302v1_random.rds</span></span>
+<span><span class="co">##   AH104715 | phyloP35way.UCSC.mm39.chrY_JH584303v1_random.rds</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="querying-annotationhub">Querying AnnotationHub<a class="anchor" aria-label="anchor" href="#querying-annotationhub"></a>
@@ -1060,284 +1060,284 @@ queries are based on</p>
 <li><p>Data source</p></li>
 </ul>
 <div class="sourceCode" id="cb87"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/S4Vectors/man/Vector-class.html" class="external-link">mcols</a></span><span class="op">(</span><span class="va">hub</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##  [1] "title"              "dataprovider"       "species"            "taxonomyid"         "genome"            </span>
-<span class="co">##  [6] "description"        "coordinate_1_based" "maintainer"         "rdatadateadded"     "preparerclass"     </span>
-<span class="co">## [11] "tags"               "rdataclass"         "rdatapath"          "sourceurl"          "sourcetype"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/S4Vectors/man/Vector-class.html" class="external-link">mcols</a></span><span class="op">(</span><span class="va">hub</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##  [1] "title"              "dataprovider"       "species"            "taxonomyid"         "genome"            </span></span>
+<span><span class="co">##  [6] "description"        "coordinate_1_based" "maintainer"         "rdatadateadded"     "preparerclass"     </span></span>
+<span><span class="co">## [11] "tags"               "rdataclass"         "rdatapath"          "sourceurl"          "sourcetype"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-data-providers">AnnotationHub Data providers<a class="anchor" aria-label="anchor" href="#annotationhub-data-providers"></a>
 </h3>
 <div class="sourceCode" id="cb89"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">dataprovider</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##  [1] "UCSC"                                                                                                      </span>
-<span class="co">##  [2] "Ensembl"                                                                                                   </span>
-<span class="co">##  [3] "RefNet"                                                                                                    </span>
-<span class="co">##  [4] "Inparanoid8"                                                                                               </span>
-<span class="co">##  [5] "NHLBI"                                                                                                     </span>
-<span class="co">##  [6] "ChEA"                                                                                                      </span>
-<span class="co">##  [7] "Pazar"                                                                                                     </span>
-<span class="co">##  [8] "NIH Pathway Interaction Database"                                                                          </span>
-<span class="co">##  [9] "Haemcode"                                                                                                  </span>
-<span class="co">## [10] "BroadInstitute"                                                                                            </span>
-<span class="co">## [11] "PRIDE"                                                                                                     </span>
-<span class="co">## [12] "Gencode"                                                                                                   </span>
-<span class="co">## [13] "CRIBI"                                                                                                     </span>
-<span class="co">## [14] "Genoscope"                                                                                                 </span>
-<span class="co">## [15] "MISO, VAST-TOOLS, UCSC"                                                                                    </span>
-<span class="co">## [16] "UWashington"                                                                                               </span>
-<span class="co">## [17] "Stanford"                                                                                                  </span>
-<span class="co">## [18] "dbSNP"                                                                                                     </span>
-<span class="co">## [19] "BioMart"                                                                                                   </span>
-<span class="co">## [20] "GeneOntology"                                                                                              </span>
-<span class="co">## [21] "KEGG"                                                                                                      </span>
-<span class="co">## [22] "URGI"                                                                                                      </span>
-<span class="co">## [23] "EMBL-EBI"                                                                                                  </span>
-<span class="co">## [24] "MicrosporidiaDB"                                                                                           </span>
-<span class="co">## [25] "FungiDB"                                                                                                   </span>
-<span class="co">## [26] "TriTrypDB"                                                                                                 </span>
-<span class="co">## [27] "ToxoDB"                                                                                                    </span>
-<span class="co">## [28] "AmoebaDB"                                                                                                  </span>
-<span class="co">## [29] "PlasmoDB"                                                                                                  </span>
-<span class="co">## [30] "PiroplasmaDB"                                                                                              </span>
-<span class="co">## [31] "CryptoDB"                                                                                                  </span>
-<span class="co">## [32] "TrichDB"                                                                                                   </span>
-<span class="co">## [33] "GiardiaDB"                                                                                                 </span>
-<span class="co">## [34] "The Gene Ontology Consortium"                                                                              </span>
-<span class="co">## [35] "ENCODE Project"                                                                                            </span>
-<span class="co">## [36] "SchistoDB"                                                                                                 </span>
-<span class="co">## [37] "NCBI/UniProt"                                                                                              </span>
-<span class="co">## [38] "GENCODE"                                                                                                   </span>
-<span class="co">## [39] "http://www.pantherdb.org"                                                                                  </span>
-<span class="co">## [40] "RMBase v2.0"                                                                                               </span>
-<span class="co">## [41] "snoRNAdb"                                                                                                  </span>
-<span class="co">## [42] "tRNAdb"                                                                                                    </span>
-<span class="co">## [43] "NCBI"                                                                                                      </span>
-<span class="co">## [44] "DrugAge, DrugBank, Broad Institute"                                                                        </span>
-<span class="co">## [45] "DrugAge"                                                                                                   </span>
-<span class="co">## [46] "DrugBank"                                                                                                  </span>
-<span class="co">## [47] "Broad Institute"                                                                                           </span>
-<span class="co">## [48] "HMDB, EMBL-EBI, EPA"                                                                                       </span>
-<span class="co">## [49] "STRING"                                                                                                    </span>
-<span class="co">## [50] "OMA"                                                                                                       </span>
-<span class="co">## [51] "OrthoDB"                                                                                                   </span>
-<span class="co">## [52] "PathBank"                                                                                                  </span>
-<span class="co">## [53] "EBI/EMBL"                                                                                                  </span>
-<span class="co">## [54] "NCBI,DBCLS"                                                                                                </span>
-<span class="co">## [55] "FANTOM5,DLRP,IUPHAR,HPRD,STRING,SWISSPROT,TREMBL,ENSEMBL,CELLPHONEDB,BADERLAB,SINGLECELLSIGNALR,HOMOLOGENE"</span>
-<span class="co">## [56] "WikiPathways"                                                                                              </span>
-<span class="co">## [57] "UCSC Jaspar"                                                                                               </span>
-<span class="co">## [58] "VAST-TOOLS"                                                                                                </span>
-<span class="co">## [59] "pyGenomeTracks "                                                                                           </span>
-<span class="co">## [60] "NA"                                                                                                        </span>
-<span class="co">## [61] "UoE"                                                                                                       </span>
-<span class="co">## [62] "mitra.stanford.edu/kundaje/akundaje/release/blacklists/"                                                   </span>
-<span class="co">## [63] "ENCODE"                                                                                                    </span>
-<span class="co">## [64] "TargetScan,miRTarBase,USCS,ENSEMBL"                                                                        </span>
-<span class="co">## [65] "TargetScan"                                                                                                </span>
-<span class="co">## [66] "QuickGO"                                                                                                   </span>
-<span class="co">## [67] "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">dataprovider</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##  [1] "UCSC"                                                                                                      </span></span>
+<span><span class="co">##  [2] "Ensembl"                                                                                                   </span></span>
+<span><span class="co">##  [3] "RefNet"                                                                                                    </span></span>
+<span><span class="co">##  [4] "Inparanoid8"                                                                                               </span></span>
+<span><span class="co">##  [5] "NHLBI"                                                                                                     </span></span>
+<span><span class="co">##  [6] "ChEA"                                                                                                      </span></span>
+<span><span class="co">##  [7] "Pazar"                                                                                                     </span></span>
+<span><span class="co">##  [8] "NIH Pathway Interaction Database"                                                                          </span></span>
+<span><span class="co">##  [9] "Haemcode"                                                                                                  </span></span>
+<span><span class="co">## [10] "BroadInstitute"                                                                                            </span></span>
+<span><span class="co">## [11] "PRIDE"                                                                                                     </span></span>
+<span><span class="co">## [12] "Gencode"                                                                                                   </span></span>
+<span><span class="co">## [13] "CRIBI"                                                                                                     </span></span>
+<span><span class="co">## [14] "Genoscope"                                                                                                 </span></span>
+<span><span class="co">## [15] "MISO, VAST-TOOLS, UCSC"                                                                                    </span></span>
+<span><span class="co">## [16] "UWashington"                                                                                               </span></span>
+<span><span class="co">## [17] "Stanford"                                                                                                  </span></span>
+<span><span class="co">## [18] "dbSNP"                                                                                                     </span></span>
+<span><span class="co">## [19] "BioMart"                                                                                                   </span></span>
+<span><span class="co">## [20] "GeneOntology"                                                                                              </span></span>
+<span><span class="co">## [21] "KEGG"                                                                                                      </span></span>
+<span><span class="co">## [22] "URGI"                                                                                                      </span></span>
+<span><span class="co">## [23] "EMBL-EBI"                                                                                                  </span></span>
+<span><span class="co">## [24] "MicrosporidiaDB"                                                                                           </span></span>
+<span><span class="co">## [25] "FungiDB"                                                                                                   </span></span>
+<span><span class="co">## [26] "TriTrypDB"                                                                                                 </span></span>
+<span><span class="co">## [27] "ToxoDB"                                                                                                    </span></span>
+<span><span class="co">## [28] "AmoebaDB"                                                                                                  </span></span>
+<span><span class="co">## [29] "PlasmoDB"                                                                                                  </span></span>
+<span><span class="co">## [30] "PiroplasmaDB"                                                                                              </span></span>
+<span><span class="co">## [31] "CryptoDB"                                                                                                  </span></span>
+<span><span class="co">## [32] "TrichDB"                                                                                                   </span></span>
+<span><span class="co">## [33] "GiardiaDB"                                                                                                 </span></span>
+<span><span class="co">## [34] "The Gene Ontology Consortium"                                                                              </span></span>
+<span><span class="co">## [35] "ENCODE Project"                                                                                            </span></span>
+<span><span class="co">## [36] "SchistoDB"                                                                                                 </span></span>
+<span><span class="co">## [37] "NCBI/UniProt"                                                                                              </span></span>
+<span><span class="co">## [38] "GENCODE"                                                                                                   </span></span>
+<span><span class="co">## [39] "http://www.pantherdb.org"                                                                                  </span></span>
+<span><span class="co">## [40] "RMBase v2.0"                                                                                               </span></span>
+<span><span class="co">## [41] "snoRNAdb"                                                                                                  </span></span>
+<span><span class="co">## [42] "tRNAdb"                                                                                                    </span></span>
+<span><span class="co">## [43] "NCBI"                                                                                                      </span></span>
+<span><span class="co">## [44] "DrugAge, DrugBank, Broad Institute"                                                                        </span></span>
+<span><span class="co">## [45] "DrugAge"                                                                                                   </span></span>
+<span><span class="co">## [46] "DrugBank"                                                                                                  </span></span>
+<span><span class="co">## [47] "Broad Institute"                                                                                           </span></span>
+<span><span class="co">## [48] "HMDB, EMBL-EBI, EPA"                                                                                       </span></span>
+<span><span class="co">## [49] "STRING"                                                                                                    </span></span>
+<span><span class="co">## [50] "OMA"                                                                                                       </span></span>
+<span><span class="co">## [51] "OrthoDB"                                                                                                   </span></span>
+<span><span class="co">## [52] "PathBank"                                                                                                  </span></span>
+<span><span class="co">## [53] "EBI/EMBL"                                                                                                  </span></span>
+<span><span class="co">## [54] "NCBI,DBCLS"                                                                                                </span></span>
+<span><span class="co">## [55] "FANTOM5,DLRP,IUPHAR,HPRD,STRING,SWISSPROT,TREMBL,ENSEMBL,CELLPHONEDB,BADERLAB,SINGLECELLSIGNALR,HOMOLOGENE"</span></span>
+<span><span class="co">## [56] "WikiPathways"                                                                                              </span></span>
+<span><span class="co">## [57] "UCSC Jaspar"                                                                                               </span></span>
+<span><span class="co">## [58] "VAST-TOOLS"                                                                                                </span></span>
+<span><span class="co">## [59] "pyGenomeTracks "                                                                                           </span></span>
+<span><span class="co">## [60] "NA"                                                                                                        </span></span>
+<span><span class="co">## [61] "UoE"                                                                                                       </span></span>
+<span><span class="co">## [62] "mitra.stanford.edu/kundaje/akundaje/release/blacklists/"                                                   </span></span>
+<span><span class="co">## [63] "ENCODE"                                                                                                    </span></span>
+<span><span class="co">## [64] "TargetScan,miRTarBase,USCS,ENSEMBL"                                                                        </span></span>
+<span><span class="co">## [65] "TargetScan"                                                                                                </span></span>
+<span><span class="co">## [66] "QuickGO"                                                                                                   </span></span>
+<span><span class="co">## [67] "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-data-classes">AnnotationHub Data classes<a class="anchor" aria-label="anchor" href="#annotationhub-data-classes"></a>
 </h3>
 <div class="sourceCode" id="cb91"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">rdataclass</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##  [1] "GRanges"                           "data.frame"                        "Inparanoid8Db"                    </span>
-<span class="co">##  [4] "TwoBitFile"                        "ChainFile"                         "SQLiteConnection"                 </span>
-<span class="co">##  [7] "biopax"                            "BigWigFile"                        "AAStringSet"                      </span>
-<span class="co">## [10] "MSnSet"                            "mzRident"                          "list"                             </span>
-<span class="co">## [13] "TxDb"                              "Rle"                               "EnsDb"                            </span>
-<span class="co">## [16] "VcfFile"                           "igraph"                            "data.frame, DNAStringSet, GRanges"</span>
-<span class="co">## [19] "sqlite"                            "data.table"                        "character"                        </span>
-<span class="co">## [22] "SQLite"                            "SQLiteFile"                        "Tibble"                           </span>
-<span class="co">## [25] "Rda"                               "FaFile"                            "String"                           </span>
-<span class="co">## [28] "OrgDb"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">rdataclass</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##  [1] "GRanges"                           "data.frame"                        "Inparanoid8Db"                    </span></span>
+<span><span class="co">##  [4] "TwoBitFile"                        "ChainFile"                         "SQLiteConnection"                 </span></span>
+<span><span class="co">##  [7] "biopax"                            "BigWigFile"                        "AAStringSet"                      </span></span>
+<span><span class="co">## [10] "MSnSet"                            "mzRident"                          "list"                             </span></span>
+<span><span class="co">## [13] "TxDb"                              "Rle"                               "EnsDb"                            </span></span>
+<span><span class="co">## [16] "VcfFile"                           "igraph"                            "data.frame, DNAStringSet, GRanges"</span></span>
+<span><span class="co">## [19] "sqlite"                            "data.table"                        "character"                        </span></span>
+<span><span class="co">## [22] "SQLite"                            "SQLiteFile"                        "Tibble"                           </span></span>
+<span><span class="co">## [25] "Rda"                               "FaFile"                            "String"                           </span></span>
+<span><span class="co">## [28] "OrgDb"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-species">AnnotationHub Species<a class="anchor" aria-label="anchor" href="#annotationhub-species"></a>
 </h3>
 <div class="sourceCode" id="cb93"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/S4Vectors/man/Vector-class.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">species</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## [1] "Homo sapiens"         "Vicugna pacos"        "Dasypus novemcinctus" "Otolemur garnettii"   "Papio hamadryas"     </span>
-<span class="co">## [6] "Papio anubis"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">species</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] "Homo sapiens"         "Vicugna pacos"        "Dasypus novemcinctus" "Otolemur garnettii"   "Papio hamadryas"     </span></span>
+<span><span class="co">## [6] "Papio anubis"</span></span></code></pre>
 <div class="sourceCode" id="cb95"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">species</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## [1] 2822</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">species</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] 2822</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-data-sources">AnnotationHub Data sources<a class="anchor" aria-label="anchor" href="#annotationhub-data-sources"></a>
 </h3>
 <div class="sourceCode" id="cb97"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">sourcetype</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">##  [1] "UCSC track"   "GTF"          "TSV"          "Inparanoid"   "TwoBit"       "Chain"        "GRASP"       </span>
-<span class="co">##  [8] "Zip"          "CSV"          "BioPax"       "BioPaxLevel2" "RData"        "BED"          "BigWig"      </span>
-<span class="co">## [15] "tab"          "FASTA"        "mzTab"        "mzid"         "GFF"          "ensembl"      "VCF"         </span>
-<span class="co">## [22] "TXT"          "JSON"         "XML"          "XLS/XLSX"     "HDF5"         "RDA"          "RDS"         </span>
-<span class="co">## [29] "NCBI/ensembl" "NCBI/UniProt"</span></code></pre>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/BiocGenerics/man/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">hub</span><span class="op">$</span><span class="va">sourcetype</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##  [1] "UCSC track"   "GTF"          "TSV"          "Inparanoid"   "TwoBit"       "Chain"        "GRASP"       </span></span>
+<span><span class="co">##  [8] "Zip"          "CSV"          "BioPax"       "BioPaxLevel2" "RData"        "BED"          "BigWig"      </span></span>
+<span><span class="co">## [15] "tab"          "FASTA"        "mzTab"        "mzid"         "GFF"          "ensembl"      "VCF"         </span></span>
+<span><span class="co">## [22] "TXT"          "JSON"         "XML"          "XLS/XLSX"     "HDF5"         "RDA"          "RDS"         </span></span>
+<span><span class="co">## [29] "NCBI/ensembl" "NCBI/UniProt"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-query">AnnotationHub query<a class="anchor" aria-label="anchor" href="#annotationhub-query"></a>
 </h3>
 <div class="sourceCode" id="cb99"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">qry</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">query</a></span><span class="op">(</span><span class="va">hub</span>, <span class="fu"><a href="https://rdrr.io/pkg/S4Vectors/man/Vector-class.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"granges"</span>,<span class="st">"homo sapiens"</span>,<span class="st">"ensembl"</span><span class="op">)</span><span class="op">)</span>
-<span class="va">qry</span></code></pre></div>
-<pre><code><span class="co">## AnnotationHub with 109 records</span>
-<span class="co">## # snapshotDate(): 2022-05-13</span>
-<span class="co">## # $dataprovider: Ensembl, UCSC, TargetScan,miRTarBase,USCS,ENSEMBL</span>
-<span class="co">## # $species: Homo sapiens, homo sapiens</span>
-<span class="co">## # $rdataclass: GRanges</span>
-<span class="co">## # additional mcols(): taxonomyid, genome, description, coordinate_1_based, maintainer, rdatadateadded,</span>
-<span class="co">## #   preparerclass, tags, rdatapath, sourceurl, sourcetype </span>
-<span class="co">## # retrieve records with, e.g., 'object[["AH5046"]]' </span>
-<span class="co">## </span>
-<span class="co">##              title                                           </span>
-<span class="co">##   AH5046   | Ensembl Genes                                   </span>
-<span class="co">##   AH5160   | Ensembl Genes                                   </span>
-<span class="co">##   AH5311   | Ensembl Genes                                   </span>
-<span class="co">##   AH5434   | Ensembl Genes                                   </span>
-<span class="co">##   AH5435   | Ensembl EST Genes                               </span>
-<span class="co">##   ...        ...                                             </span>
-<span class="co">##   AH98495  | Homo_sapiens.GRCh38.105.gtf                     </span>
-<span class="co">##   AH102892 | Homo_sapiens.GRCh38.106.abinitio.gtf            </span>
-<span class="co">##   AH102893 | Homo_sapiens.GRCh38.106.chr.gtf                 </span>
-<span class="co">##   AH102894 | Homo_sapiens.GRCh38.106.chr_patch_hapl_scaff.gtf</span>
-<span class="co">##   AH102895 | Homo_sapiens.GRCh38.106.gtf</span></code></pre>
+<code class="sourceCode R"><span><span class="va">qry</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">query</a></span><span class="op">(</span><span class="va">hub</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"granges"</span>,<span class="st">"homo sapiens"</span>,<span class="st">"ensembl"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">qry</span></span></code></pre></div>
+<pre><code><span><span class="co">## AnnotationHub with 109 records</span></span>
+<span><span class="co">## # snapshotDate(): 2022-07-11</span></span>
+<span><span class="co">## # $dataprovider: Ensembl, UCSC, TargetScan,miRTarBase,USCS,ENSEMBL</span></span>
+<span><span class="co">## # $species: Homo sapiens, homo sapiens</span></span>
+<span><span class="co">## # $rdataclass: GRanges</span></span>
+<span><span class="co">## # additional mcols(): taxonomyid, genome, description, coordinate_1_based, maintainer, rdatadateadded,</span></span>
+<span><span class="co">## #   preparerclass, tags, rdatapath, sourceurl, sourcetype </span></span>
+<span><span class="co">## # retrieve records with, e.g., 'object[["AH5046"]]' </span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">##              title                                           </span></span>
+<span><span class="co">##   AH5046   | Ensembl Genes                                   </span></span>
+<span><span class="co">##   AH5160   | Ensembl Genes                                   </span></span>
+<span><span class="co">##   AH5311   | Ensembl Genes                                   </span></span>
+<span><span class="co">##   AH5434   | Ensembl Genes                                   </span></span>
+<span><span class="co">##   AH5435   | Ensembl EST Genes                               </span></span>
+<span><span class="co">##   ...        ...                                             </span></span>
+<span><span class="co">##   AH98495  | Homo_sapiens.GRCh38.105.gtf                     </span></span>
+<span><span class="co">##   AH102892 | Homo_sapiens.GRCh38.106.abinitio.gtf            </span></span>
+<span><span class="co">##   AH102893 | Homo_sapiens.GRCh38.106.chr.gtf                 </span></span>
+<span><span class="co">##   AH102894 | Homo_sapiens.GRCh38.106.chr_patch_hapl_scaff.gtf</span></span>
+<span><span class="co">##   AH102895 | Homo_sapiens.GRCh38.106.gtf</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-query-1">AnnotationHub query<a class="anchor" aria-label="anchor" href="#annotationhub-query-1"></a>
 </h3>
 <div class="sourceCode" id="cb101"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">qry</span><span class="op">$</span><span class="va">sourceurl</span></code></pre></div>
-<pre><code><span class="co">##   [1] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/ensGene"                                    </span>
-<span class="co">##   [2] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg18/database/ensGene"                                    </span>
-<span class="co">##   [3] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg17/database/ensGene"                                    </span>
-<span class="co">##   [4] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg16/database/ensGene"                                    </span>
-<span class="co">##   [5] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg16/database/ensEstGene"                                 </span>
-<span class="co">##   [6] "ftp://ftp.ensembl.org/pub/release-70/gtf/homo_sapiens/Homo_sapiens.GRCh37.70.gtf.gz"                       </span>
-<span class="co">##   [7] "ftp://ftp.ensembl.org/pub/release-69/gtf/homo_sapiens/Homo_sapiens.GRCh37.69.gtf.gz"                       </span>
-<span class="co">##   [8] "ftp://ftp.ensembl.org/pub/release-71/gtf/homo_sapiens/Homo_sapiens.GRCh37.71.gtf.gz"                       </span>
-<span class="co">##   [9] "ftp://ftp.ensembl.org/pub/release-72/gtf/homo_sapiens/Homo_sapiens.GRCh37.72.gtf.gz"                       </span>
-<span class="co">##  [10] "ftp://ftp.ensembl.org/pub/release-73/gtf/homo_sapiens/Homo_sapiens.GRCh37.73.gtf.gz"                       </span>
-<span class="co">##  [11] "ftp://ftp.ensembl.org/pub/release-74/gtf/homo_sapiens/Homo_sapiens.GRCh37.74.gtf.gz"                       </span>
-<span class="co">##  [12] "ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz"                       </span>
-<span class="co">##  [13] "ftp://ftp.ensembl.org/pub/release-78/gtf/homo_sapiens/Homo_sapiens.GRCh38.78.gtf.gz"                       </span>
-<span class="co">##  [14] "ftp://ftp.ensembl.org/pub/release-76/gtf/homo_sapiens/Homo_sapiens.GRCh38.76.gtf.gz"                       </span>
-<span class="co">##  [15] "ftp://ftp.ensembl.org/pub/release-79/gtf/homo_sapiens/Homo_sapiens.GRCh38.79.gtf.gz"                       </span>
-<span class="co">##  [16] "ftp://ftp.ensembl.org/pub/release-77/gtf/homo_sapiens/Homo_sapiens.GRCh38.77.gtf.gz"                       </span>
-<span class="co">##  [17] "ftp://ftp.ensembl.org/pub/release-80/gtf/homo_sapiens/Homo_sapiens.GRCh38.80.gtf.gz"                       </span>
-<span class="co">##  [18] "ftp://ftp.ensembl.org/pub/release-81/gtf/homo_sapiens/Homo_sapiens.GRCh38.81.gtf.gz"                       </span>
-<span class="co">##  [19] "ftp://ftp.ensembl.org/pub/release-82/gtf/homo_sapiens/Homo_sapiens.GRCh38.82.gtf.gz"                       </span>
-<span class="co">##  [20] "ftp://ftp.ensembl.org/pub/release-83/gtf/homo_sapiens/Homo_sapiens.GRCh38.83.gtf.gz"                       </span>
-<span class="co">##  [21] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.abinitio.gtf.gz"              </span>
-<span class="co">##  [22] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.chr.gtf.gz"                   </span>
-<span class="co">##  [23] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [24] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.gtf.gz"                       </span>
-<span class="co">##  [25] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.abinitio.gtf.gz"              </span>
-<span class="co">##  [26] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.chr.gtf.gz"                   </span>
-<span class="co">##  [27] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [28] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.gtf.gz"                       </span>
-<span class="co">##  [29] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.abinitio.gtf.gz"              </span>
-<span class="co">##  [30] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.chr.gtf.gz"                   </span>
-<span class="co">##  [31] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [32] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.gtf.gz"                       </span>
-<span class="co">##  [33] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.abinitio.gtf.gz"              </span>
-<span class="co">##  [34] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.chr.gtf.gz"                   </span>
-<span class="co">##  [35] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [36] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.gtf.gz"                       </span>
-<span class="co">##  [37] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.abinitio.gtf.gz"              </span>
-<span class="co">##  [38] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.chr.gtf.gz"                   </span>
-<span class="co">##  [39] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [40] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.gtf.gz"                       </span>
-<span class="co">##  [41] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.abinitio.gtf.gz"              </span>
-<span class="co">##  [42] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.chr.gtf.gz"                   </span>
-<span class="co">##  [43] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [44] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.gtf.gz"                       </span>
-<span class="co">##  [45] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.abinitio.gtf.gz"              </span>
-<span class="co">##  [46] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.chr.gtf.gz"                   </span>
-<span class="co">##  [47] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [48] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.gtf.gz"                       </span>
-<span class="co">##  [49] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.abinitio.gtf.gz"              </span>
-<span class="co">##  [50] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.chr.gtf.gz"                   </span>
-<span class="co">##  [51] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [52] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.gtf.gz"                       </span>
-<span class="co">##  [53] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.abinitio.gtf.gz"              </span>
-<span class="co">##  [54] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.chr.gtf.gz"                   </span>
-<span class="co">##  [55] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [56] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.gtf.gz"                       </span>
-<span class="co">##  [57] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.abinitio.gtf.gz"              </span>
-<span class="co">##  [58] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.chr.gtf.gz"                   </span>
-<span class="co">##  [59] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [60] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.gtf.gz"                       </span>
-<span class="co">##  [61] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.abinitio.gtf.gz"              </span>
-<span class="co">##  [62] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.chr.gtf.gz"                   </span>
-<span class="co">##  [63] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [64] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.gtf.gz"                       </span>
-<span class="co">##  [65] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.abinitio.gtf.gz"              </span>
-<span class="co">##  [66] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.chr.gtf.gz"                   </span>
-<span class="co">##  [67] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [68] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.gtf.gz"                       </span>
-<span class="co">##  [69] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.abinitio.gtf.gz"              </span>
-<span class="co">##  [70] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.chr.gtf.gz"                   </span>
-<span class="co">##  [71] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [72] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.gtf.gz"                       </span>
-<span class="co">##  [73] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.abinitio.gtf.gz"              </span>
-<span class="co">##  [74] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.chr.gtf.gz"                   </span>
-<span class="co">##  [75] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [76] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.gtf.gz"                       </span>
-<span class="co">##  [77] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.abinitio.gtf.gz"              </span>
-<span class="co">##  [78] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.chr.gtf.gz"                   </span>
-<span class="co">##  [79] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.chr_patch_hapl_scaff.gtf.gz"  </span>
-<span class="co">##  [80] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.gtf.gz"                       </span>
-<span class="co">##  [81] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.abinitio.gtf.gz"            </span>
-<span class="co">##  [82] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.chr.gtf.gz"                 </span>
-<span class="co">##  [83] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.chr_patch_hapl_scaff.gtf.gz"</span>
-<span class="co">##  [84] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.gtf.gz"                     </span>
-<span class="co">##  [85] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.abinitio.gtf.gz"            </span>
-<span class="co">##  [86] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.chr.gtf.gz"                 </span>
-<span class="co">##  [87] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.chr_patch_hapl_scaff.gtf.gz"</span>
-<span class="co">##  [88] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.gtf.gz"                     </span>
-<span class="co">##  [89] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.abinitio.gtf.gz"            </span>
-<span class="co">##  [90] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.chr.gtf.gz"                 </span>
-<span class="co">##  [91] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.chr_patch_hapl_scaff.gtf.gz"</span>
-<span class="co">##  [92] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.gtf.gz"                     </span>
-<span class="co">##  [93] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.abinitio.gtf.gz"            </span>
-<span class="co">##  [94] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.chr.gtf.gz"                 </span>
-<span class="co">##  [95] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.chr_patch_hapl_scaff.gtf.gz"</span>
-<span class="co">##  [96] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.gtf.gz"                     </span>
-<span class="co">##  [97] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.abinitio.gtf.gz"            </span>
-<span class="co">##  [98] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.chr.gtf.gz"                 </span>
-<span class="co">##  [99] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.chr_patch_hapl_scaff.gtf.gz"</span>
-<span class="co">## [100] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.gtf.gz"                     </span>
-<span class="co">## [101] "http://www.targetscan.org/vert_80/"                                                                        </span>
-<span class="co">## [102] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.abinitio.gtf.gz"            </span>
-<span class="co">## [103] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.chr.gtf.gz"                 </span>
-<span class="co">## [104] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.chr_patch_hapl_scaff.gtf.gz"</span>
-<span class="co">## [105] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.gtf.gz"                     </span>
-<span class="co">## [106] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.abinitio.gtf.gz"            </span>
-<span class="co">## [107] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.chr.gtf.gz"                 </span>
-<span class="co">## [108] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.chr_patch_hapl_scaff.gtf.gz"</span>
-<span class="co">## [109] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.gtf.gz"</span></code></pre>
+<code class="sourceCode R"><span><span class="va">qry</span><span class="op">$</span><span class="va">sourceurl</span></span></code></pre></div>
+<pre><code><span><span class="co">##   [1] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/ensGene"                                    </span></span>
+<span><span class="co">##   [2] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg18/database/ensGene"                                    </span></span>
+<span><span class="co">##   [3] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg17/database/ensGene"                                    </span></span>
+<span><span class="co">##   [4] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg16/database/ensGene"                                    </span></span>
+<span><span class="co">##   [5] "rtracklayer://hgdownload.cse.ucsc.edu/goldenpath/hg16/database/ensEstGene"                                 </span></span>
+<span><span class="co">##   [6] "ftp://ftp.ensembl.org/pub/release-70/gtf/homo_sapiens/Homo_sapiens.GRCh37.70.gtf.gz"                       </span></span>
+<span><span class="co">##   [7] "ftp://ftp.ensembl.org/pub/release-69/gtf/homo_sapiens/Homo_sapiens.GRCh37.69.gtf.gz"                       </span></span>
+<span><span class="co">##   [8] "ftp://ftp.ensembl.org/pub/release-71/gtf/homo_sapiens/Homo_sapiens.GRCh37.71.gtf.gz"                       </span></span>
+<span><span class="co">##   [9] "ftp://ftp.ensembl.org/pub/release-72/gtf/homo_sapiens/Homo_sapiens.GRCh37.72.gtf.gz"                       </span></span>
+<span><span class="co">##  [10] "ftp://ftp.ensembl.org/pub/release-73/gtf/homo_sapiens/Homo_sapiens.GRCh37.73.gtf.gz"                       </span></span>
+<span><span class="co">##  [11] "ftp://ftp.ensembl.org/pub/release-74/gtf/homo_sapiens/Homo_sapiens.GRCh37.74.gtf.gz"                       </span></span>
+<span><span class="co">##  [12] "ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz"                       </span></span>
+<span><span class="co">##  [13] "ftp://ftp.ensembl.org/pub/release-78/gtf/homo_sapiens/Homo_sapiens.GRCh38.78.gtf.gz"                       </span></span>
+<span><span class="co">##  [14] "ftp://ftp.ensembl.org/pub/release-76/gtf/homo_sapiens/Homo_sapiens.GRCh38.76.gtf.gz"                       </span></span>
+<span><span class="co">##  [15] "ftp://ftp.ensembl.org/pub/release-79/gtf/homo_sapiens/Homo_sapiens.GRCh38.79.gtf.gz"                       </span></span>
+<span><span class="co">##  [16] "ftp://ftp.ensembl.org/pub/release-77/gtf/homo_sapiens/Homo_sapiens.GRCh38.77.gtf.gz"                       </span></span>
+<span><span class="co">##  [17] "ftp://ftp.ensembl.org/pub/release-80/gtf/homo_sapiens/Homo_sapiens.GRCh38.80.gtf.gz"                       </span></span>
+<span><span class="co">##  [18] "ftp://ftp.ensembl.org/pub/release-81/gtf/homo_sapiens/Homo_sapiens.GRCh38.81.gtf.gz"                       </span></span>
+<span><span class="co">##  [19] "ftp://ftp.ensembl.org/pub/release-82/gtf/homo_sapiens/Homo_sapiens.GRCh38.82.gtf.gz"                       </span></span>
+<span><span class="co">##  [20] "ftp://ftp.ensembl.org/pub/release-83/gtf/homo_sapiens/Homo_sapiens.GRCh38.83.gtf.gz"                       </span></span>
+<span><span class="co">##  [21] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [22] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [23] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [24] "ftp://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.gtf.gz"                       </span></span>
+<span><span class="co">##  [25] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [26] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [27] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [28] "ftp://ftp.ensembl.org/pub/release-85/gtf/homo_sapiens/Homo_sapiens.GRCh38.85.gtf.gz"                       </span></span>
+<span><span class="co">##  [29] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [30] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [31] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [32] "ftp://ftp.ensembl.org/pub/release-86/gtf/homo_sapiens/Homo_sapiens.GRCh38.86.gtf.gz"                       </span></span>
+<span><span class="co">##  [33] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [34] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [35] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [36] "ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.gtf.gz"                       </span></span>
+<span><span class="co">##  [37] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [38] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [39] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [40] "ftp://ftp.ensembl.org/pub/release-88/gtf/homo_sapiens/Homo_sapiens.GRCh38.88.gtf.gz"                       </span></span>
+<span><span class="co">##  [41] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [42] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [43] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [44] "ftp://ftp.ensembl.org/pub/release-89/gtf/homo_sapiens/Homo_sapiens.GRCh38.89.gtf.gz"                       </span></span>
+<span><span class="co">##  [45] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [46] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [47] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [48] "ftp://ftp.ensembl.org/pub/release-90/gtf/homo_sapiens/Homo_sapiens.GRCh38.90.gtf.gz"                       </span></span>
+<span><span class="co">##  [49] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [50] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [51] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [52] "ftp://ftp.ensembl.org/pub/release-91/gtf/homo_sapiens/Homo_sapiens.GRCh38.91.gtf.gz"                       </span></span>
+<span><span class="co">##  [53] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [54] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [55] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [56] "ftp://ftp.ensembl.org/pub/release-92/gtf/homo_sapiens/Homo_sapiens.GRCh38.92.gtf.gz"                       </span></span>
+<span><span class="co">##  [57] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [58] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [59] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [60] "ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.gtf.gz"                       </span></span>
+<span><span class="co">##  [61] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [62] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [63] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [64] "ftp://ftp.ensembl.org/pub/release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.gtf.gz"                       </span></span>
+<span><span class="co">##  [65] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [66] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [67] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [68] "ftp://ftp.ensembl.org/pub/release-95/gtf/homo_sapiens/Homo_sapiens.GRCh38.95.gtf.gz"                       </span></span>
+<span><span class="co">##  [69] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [70] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [71] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [72] "ftp://ftp.ensembl.org/pub/release-96/gtf/homo_sapiens/Homo_sapiens.GRCh38.96.gtf.gz"                       </span></span>
+<span><span class="co">##  [73] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [74] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [75] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [76] "ftp://ftp.ensembl.org/pub/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh38.98.gtf.gz"                       </span></span>
+<span><span class="co">##  [77] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.abinitio.gtf.gz"              </span></span>
+<span><span class="co">##  [78] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.chr.gtf.gz"                   </span></span>
+<span><span class="co">##  [79] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.chr_patch_hapl_scaff.gtf.gz"  </span></span>
+<span><span class="co">##  [80] "ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.gtf.gz"                       </span></span>
+<span><span class="co">##  [81] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.abinitio.gtf.gz"            </span></span>
+<span><span class="co">##  [82] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.chr.gtf.gz"                 </span></span>
+<span><span class="co">##  [83] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.chr_patch_hapl_scaff.gtf.gz"</span></span>
+<span><span class="co">##  [84] "ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.gtf.gz"                     </span></span>
+<span><span class="co">##  [85] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.abinitio.gtf.gz"            </span></span>
+<span><span class="co">##  [86] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.chr.gtf.gz"                 </span></span>
+<span><span class="co">##  [87] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.chr_patch_hapl_scaff.gtf.gz"</span></span>
+<span><span class="co">##  [88] "ftp://ftp.ensembl.org/pub/release-101/gtf/homo_sapiens/Homo_sapiens.GRCh38.101.gtf.gz"                     </span></span>
+<span><span class="co">##  [89] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.abinitio.gtf.gz"            </span></span>
+<span><span class="co">##  [90] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.chr.gtf.gz"                 </span></span>
+<span><span class="co">##  [91] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.chr_patch_hapl_scaff.gtf.gz"</span></span>
+<span><span class="co">##  [92] "ftp://ftp.ensembl.org/pub/release-102/gtf/homo_sapiens/Homo_sapiens.GRCh38.102.gtf.gz"                     </span></span>
+<span><span class="co">##  [93] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.abinitio.gtf.gz"            </span></span>
+<span><span class="co">##  [94] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.chr.gtf.gz"                 </span></span>
+<span><span class="co">##  [95] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.chr_patch_hapl_scaff.gtf.gz"</span></span>
+<span><span class="co">##  [96] "ftp://ftp.ensembl.org/pub/release-103/gtf/homo_sapiens/Homo_sapiens.GRCh38.103.gtf.gz"                     </span></span>
+<span><span class="co">##  [97] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.abinitio.gtf.gz"            </span></span>
+<span><span class="co">##  [98] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.chr.gtf.gz"                 </span></span>
+<span><span class="co">##  [99] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.chr_patch_hapl_scaff.gtf.gz"</span></span>
+<span><span class="co">## [100] "ftp://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.gtf.gz"                     </span></span>
+<span><span class="co">## [101] "http://www.targetscan.org/vert_80/"                                                                        </span></span>
+<span><span class="co">## [102] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.abinitio.gtf.gz"            </span></span>
+<span><span class="co">## [103] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.chr.gtf.gz"                 </span></span>
+<span><span class="co">## [104] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.chr_patch_hapl_scaff.gtf.gz"</span></span>
+<span><span class="co">## [105] "ftp://ftp.ensembl.org/pub/release-105/gtf/homo_sapiens/Homo_sapiens.GRCh38.105.gtf.gz"                     </span></span>
+<span><span class="co">## [106] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.abinitio.gtf.gz"            </span></span>
+<span><span class="co">## [107] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.chr.gtf.gz"                 </span></span>
+<span><span class="co">## [108] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.chr_patch_hapl_scaff.gtf.gz"</span></span>
+<span><span class="co">## [109] "ftp://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.gtf.gz"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="selecting-annotationhub-resource">Selecting AnnotationHub resource<a class="anchor" aria-label="anchor" href="#selecting-annotationhub-resource"></a>
 </h3>
 <div class="sourceCode" id="cb103"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">whatIwant</span> <span class="op">&lt;-</span> <span class="va">qry</span><span class="op">[[</span><span class="st">"AH80077"</span><span class="op">]</span><span class="op">]</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">whatIwant</span> <span class="op">&lt;-</span> <span class="va">qry</span><span class="op">[[</span><span class="st">"AH80077"</span><span class="op">]</span><span class="op">]</span></span></code></pre></div>
 <p>We can use these data as they are, or convert to a TxDb format:</p>
 <div class="sourceCode" id="cb104"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">GRCh38TxDb</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/makeTxDbFromGRanges.html" class="external-link">makeTxDbFromGRanges</a></span><span class="op">(</span><span class="va">whatIwant</span><span class="op">)</span>
-<span class="va">GRCh38TxDb</span></code></pre></div>
-<pre><code><span class="co">## TxDb object:</span>
-<span class="co">## # Db type: TxDb</span>
-<span class="co">## # Supporting package: GenomicFeatures</span>
-<span class="co">## # Genome: GRCh38.p13</span>
-<span class="co">## # Nb of transcripts: 227887</span>
-<span class="co">## # Db created by: GenomicFeatures package from Bioconductor</span>
-<span class="co">## # Creation time: 2022-05-16 18:33:45 +0000 (Mon, 16 May 2022)</span>
-<span class="co">## # GenomicFeatures version at creation time: 1.49.1</span>
-<span class="co">## # RSQLite version at creation time: 2.2.14</span>
-<span class="co">## # DBSCHEMAVERSION: 1.2</span></code></pre>
+<code class="sourceCode R"><span><span class="va">GRCh38TxDb</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/makeTxDbFromGRanges.html" class="external-link">makeTxDbFromGRanges</a></span><span class="op">(</span><span class="va">whatIwant</span><span class="op">)</span></span>
+<span><span class="va">GRCh38TxDb</span></span></code></pre></div>
+<pre><code><span><span class="co">## TxDb object:</span></span>
+<span><span class="co">## # Db type: TxDb</span></span>
+<span><span class="co">## # Supporting package: GenomicFeatures</span></span>
+<span><span class="co">## # Genome: GRCh38.p13</span></span>
+<span><span class="co">## # Nb of transcripts: 227887</span></span>
+<span><span class="co">## # Db created by: GenomicFeatures package from Bioconductor</span></span>
+<span><span class="co">## # Creation time: 2022-07-14 15:59:48 +0000 (Thu, 14 Jul 2022)</span></span>
+<span><span class="co">## # GenomicFeatures version at creation time: 1.49.5</span></span>
+<span><span class="co">## # RSQLite version at creation time: 2.2.14</span></span>
+<span><span class="co">## # DBSCHEMAVERSION: 1.2</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-exercises">AnnotationHub exercises<a class="anchor" aria-label="anchor" href="#annotationhub-exercises"></a>
@@ -1394,7 +1394,7 @@ server.</p>
 and data set that we care about, we can make queries. We first set up
 the <code>mart</code> object.</p>
 <div class="sourceCode" id="cb108"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">mart</span> <span class="op">&lt;-</span> <span class="fu">useEnsembl</span><span class="op">(</span><span class="st">"ensembl"</span>,<span class="st">"hsapiens_gene_ensembl"</span>                   <span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">mart</span> <span class="op">&lt;-</span> <span class="fu">useEnsembl</span><span class="op">(</span><span class="st">"ensembl"</span>,<span class="st">"hsapiens_gene_ensembl"</span>                   <span class="op">)</span></span></code></pre></div>
 <p>Queries are of the form</p>
 <p>getBM(<em>attributes</em>, <em>filters</em>, <em>values</em>,
 <em>mart</em>)</p>
@@ -1475,7 +1475,7 @@ GAPDH?</p></li>
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer>
