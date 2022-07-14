@@ -1,9 +1,7 @@
 # Introduction to Bioconductor annotation resources
-![](https://github.com/jmacdon/Bioc2022Anno/workflows/.github/workflows/basic_checks.yaml/badge.svg)
-# Instructors
+# Instructor
 
 * James W. MacDonald (jmacdon@uw.edu)
-* Lori Shepherd (lori.shepherd@roswellpark.org)
 
 # Workshop Description
 
