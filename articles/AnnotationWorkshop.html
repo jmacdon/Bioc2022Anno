@@ -860,7 +860,7 @@ information through <code>dplyr</code> functions.</p></li>
 <span><span class="co"># src = src_organism("TxDb.Hsapiens.UCSC.hg19.knownGene")</span></span>
 <span><span class="va">src</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/Organism.dplyr/man/src.html" class="external-link">src_organism</a></span><span class="op">(</span>dbpath <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Organism.dplyr/man/utils.html" class="external-link">hg38light</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">src</span></span></code></pre></div>
-<pre><code><span><span class="co">## src:  sqlite 3.38.5 [/usr/local/lib/R/site-library/Organism.dplyr/extdata/light.hg38.knownGene.sqlite]</span></span>
+<pre><code><span><span class="co">## src:  sqlite 3.39.1 [/usr/local/lib/R/site-library/Organism.dplyr/extdata/light.hg38.knownGene.sqlite]</span></span>
 <span><span class="co">## tbls: id, id_accession, id_go, id_go_all, id_omim_pm, id_protein,</span></span>
 <span><span class="co">##   id_transcript, ranges_cds, ranges_exon, ranges_gene, ranges_tx</span></span></code></pre>
 </div>
@@ -895,7 +895,7 @@ information through <code>dplyr</code> functions.</p></li>
 <div class="sourceCode" id="cb69"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/tbl.html" class="external-link">tbl</a></span><span class="op">(</span><span class="va">src</span>, <span class="st">"id"</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## <span style="color: #949494;"># Source:   table&lt;id&gt; [?? x 6]</span></span></span>
-<span><span class="co">## <span style="color: #949494;"># Database: sqlite 3.38.5 []</span></span></span>
+<span><span class="co">## <span style="color: #949494;"># Database: sqlite 3.39.1 []</span></span></span>
 <span><span class="co">##    entrez map      ensembl         symbol genename               alias   </span></span>
 <span><span class="co">##    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span></span>
 <span><span class="co">## <span style="color: #BCBCBC;"> 1</span> 1      19q13.43 ENSG00000121410 A1BG   alpha-1-B glycoprotein A1B     </span></span>
@@ -908,7 +908,8 @@ information through <code>dplyr</code> functions.</p></li>
 <span><span class="co">## <span style="color: #BCBCBC;"> 8</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  PNAT    </span></span>
 <span><span class="co">## <span style="color: #BCBCBC;"> 9</span> 10     8p22     ENSG00000156006 NAT2   N-acetyltransferase 2  NAT2    </span></span>
 <span><span class="co">## <span style="color: #BCBCBC;">10</span> 100    20q13.12 ENSG00000196839 ADA    adenosine deaminase    ADA1    </span></span>
-<span><span class="co">## <span style="color: #949494;"># … with more rows</span></span></span></code></pre>
+<span><span class="co">## <span style="color: #949494;"># … with more rows</span></span></span>
+<span><span class="co">## <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows</span></span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="organism-dplyr-2">Organism.dplyr<a class="anchor" aria-label="anchor" href="#organism-dplyr-2"></a>
@@ -921,7 +922,7 @@ information through <code>dplyr</code> functions.</p></li>
 <span>            <span class="va">gene_strand</span>, <span class="va">symbol</span>, <span class="va">alias</span>, <span class="va">map</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## Joining, by = "entrez"</span></span></code></pre>
 <pre><code><span><span class="co">## <span style="color: #949494;"># Source:   SQL [6 x 7]</span></span></span>
-<span><span class="co">## <span style="color: #949494;"># Database: sqlite 3.38.5 []</span></span></span>
+<span><span class="co">## <span style="color: #949494;"># Database: sqlite 3.39.1 []</span></span></span>
 <span><span class="co">##   gene_chrom gene_start gene_end gene_strand symbol alias map     </span></span>
 <span><span class="co">##   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span></span>
 <span><span class="co">## <span style="color: #BCBCBC;">1</span> chr8         18<span style="text-decoration: underline;">386</span>311 18<span style="text-decoration: underline;">401</span>218 +           NAT2   AAC2  8p22    </span></span>
@@ -1022,11 +1023,11 @@ them.</p>
 <div class="sourceCode" id="cb83"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">AnnotationHub</span><span class="op">)</span></span>
 <span><span class="va">hub</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">AnnotationHub</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## snapshotDate(): 2022-07-11</span></span></code></pre>
+<pre><code><span><span class="co">## snapshotDate(): 2022-07-22</span></span></code></pre>
 <div class="sourceCode" id="cb85"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">hub</span></span></code></pre></div>
-<pre><code><span><span class="co">## AnnotationHub with 65055 records</span></span>
-<span><span class="co">## # snapshotDate(): 2022-07-11</span></span>
+<pre><code><span><span class="co">## AnnotationHub with 65102 records</span></span>
+<span><span class="co">## # snapshotDate(): 2022-07-22</span></span>
 <span><span class="co">## # $dataprovider: Ensembl, BroadInstitute, UCSC, ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/, Haemcode, FANTOM5,DLRP,IUPHAR...</span></span>
 <span><span class="co">## # $species: Homo sapiens, Mus musculus, Drosophila melanogaster, Bos taurus, Rattus norvegicus, Pan troglodytes, Dan...</span></span>
 <span><span class="co">## # $rdataclass: GRanges, TwoBitFile, BigWigFile, EnsDb, Rle, OrgDb, ChainFile, SQLiteFile, TxDb, Inparanoid8Db</span></span>
@@ -1034,18 +1035,18 @@ them.</p>
 <span><span class="co">## #   preparerclass, tags, rdatapath, sourceurl, sourcetype </span></span>
 <span><span class="co">## # retrieve records with, e.g., 'object[["AH5012"]]' </span></span>
 <span><span class="co">## </span></span>
-<span><span class="co">##              title                                           </span></span>
-<span><span class="co">##   AH5012   | Chromosome Band                                 </span></span>
-<span><span class="co">##   AH5013   | STS Markers                                     </span></span>
-<span><span class="co">##   AH5014   | FISH Clones                                     </span></span>
-<span><span class="co">##   AH5015   | Recomb Rate                                     </span></span>
-<span><span class="co">##   AH5016   | ENCODE Pilot                                    </span></span>
-<span><span class="co">##   ...        ...                                             </span></span>
-<span><span class="co">##   AH104711 | phyloP35way.UCSC.mm39.chrY.rds                  </span></span>
-<span><span class="co">##   AH104712 | phyloP35way.UCSC.mm39.chrY_JH584300v1_random.rds</span></span>
-<span><span class="co">##   AH104713 | phyloP35way.UCSC.mm39.chrY_JH584301v1_random.rds</span></span>
-<span><span class="co">##   AH104714 | phyloP35way.UCSC.mm39.chrY_JH584302v1_random.rds</span></span>
-<span><span class="co">##   AH104715 | phyloP35way.UCSC.mm39.chrY_JH584303v1_random.rds</span></span></code></pre>
+<span><span class="co">##              title                                                 </span></span>
+<span><span class="co">##   AH5012   | Chromosome Band                                       </span></span>
+<span><span class="co">##   AH5013   | STS Markers                                           </span></span>
+<span><span class="co">##   AH5014   | FISH Clones                                           </span></span>
+<span><span class="co">##   AH5015   | Recomb Rate                                           </span></span>
+<span><span class="co">##   AH5016   | ENCODE Pilot                                          </span></span>
+<span><span class="co">##   ...        ...                                                   </span></span>
+<span><span class="co">##   AH104762 | mm9.JASPAR2022_CORE_vertebrates_non_redundant_v2.RData</span></span>
+<span><span class="co">##   AH104763 | mm9.Jolma2013.RData                                   </span></span>
+<span><span class="co">##   AH104764 | mm9.MA0139.1.RData                                    </span></span>
+<span><span class="co">##   AH104765 | mm9.SwissRegulon_human_and_mouse.RData                </span></span>
+<span><span class="co">##   AH104766 | mm8.CTCFBSDB.CTCF_predicted_mouse.RData</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="querying-annotationhub">Querying AnnotationHub<a class="anchor" aria-label="anchor" href="#querying-annotationhub"></a>
@@ -1126,17 +1127,23 @@ queries are based on</p>
 <span><span class="co">## [54] "NCBI,DBCLS"                                                                                                </span></span>
 <span><span class="co">## [55] "FANTOM5,DLRP,IUPHAR,HPRD,STRING,SWISSPROT,TREMBL,ENSEMBL,CELLPHONEDB,BADERLAB,SINGLECELLSIGNALR,HOMOLOGENE"</span></span>
 <span><span class="co">## [56] "WikiPathways"                                                                                              </span></span>
-<span><span class="co">## [57] "UCSC Jaspar"                                                                                               </span></span>
-<span><span class="co">## [58] "VAST-TOOLS"                                                                                                </span></span>
-<span><span class="co">## [59] "pyGenomeTracks "                                                                                           </span></span>
-<span><span class="co">## [60] "NA"                                                                                                        </span></span>
-<span><span class="co">## [61] "UoE"                                                                                                       </span></span>
-<span><span class="co">## [62] "mitra.stanford.edu/kundaje/akundaje/release/blacklists/"                                                   </span></span>
-<span><span class="co">## [63] "ENCODE"                                                                                                    </span></span>
-<span><span class="co">## [64] "TargetScan,miRTarBase,USCS,ENSEMBL"                                                                        </span></span>
-<span><span class="co">## [65] "TargetScan"                                                                                                </span></span>
-<span><span class="co">## [66] "QuickGO"                                                                                                   </span></span>
-<span><span class="co">## [67] "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/"</span></span></code></pre>
+<span><span class="co">## [57] "VAST-TOOLS"                                                                                                </span></span>
+<span><span class="co">## [58] "pyGenomeTracks "                                                                                           </span></span>
+<span><span class="co">## [59] "NA"                                                                                                        </span></span>
+<span><span class="co">## [60] "UoE"                                                                                                       </span></span>
+<span><span class="co">## [61] "mitra.stanford.edu/kundaje/akundaje/release/blacklists/"                                                   </span></span>
+<span><span class="co">## [62] "ENCODE"                                                                                                    </span></span>
+<span><span class="co">## [63] "TargetScan,miRTarBase,USCS,ENSEMBL"                                                                        </span></span>
+<span><span class="co">## [64] "TargetScan"                                                                                                </span></span>
+<span><span class="co">## [65] "QuickGO"                                                                                                   </span></span>
+<span><span class="co">## [66] "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/"                                                                     </span></span>
+<span><span class="co">## [67] "CIS-BP"                                                                                                    </span></span>
+<span><span class="co">## [68] "CTCFBSDB 2.0"                                                                                              </span></span>
+<span><span class="co">## [69] "HOCOMOCO v11"                                                                                              </span></span>
+<span><span class="co">## [70] "JASPAR 2022"                                                                                               </span></span>
+<span><span class="co">## [71] "Jolma 2013"                                                                                                </span></span>
+<span><span class="co">## [72] "SwissRegulon"                                                                                              </span></span>
+<span><span class="co">## [73] "ENCODE SCREEN v3"</span></span></code></pre>
 </div>
 <div class="section level3">
 <h3 id="annotationhub-data-classes">AnnotationHub Data classes<a class="anchor" aria-label="anchor" href="#annotationhub-data-classes"></a>
@@ -1183,7 +1190,7 @@ queries are based on</p>
 <code class="sourceCode R"><span><span class="va">qry</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/AnnotationHub/man/AnnotationHub-class.html" class="external-link">query</a></span><span class="op">(</span><span class="va">hub</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"granges"</span>,<span class="st">"homo sapiens"</span>,<span class="st">"ensembl"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">qry</span></span></code></pre></div>
 <pre><code><span><span class="co">## AnnotationHub with 109 records</span></span>
-<span><span class="co">## # snapshotDate(): 2022-07-11</span></span>
+<span><span class="co">## # snapshotDate(): 2022-07-22</span></span>
 <span><span class="co">## # $dataprovider: Ensembl, UCSC, TargetScan,miRTarBase,USCS,ENSEMBL</span></span>
 <span><span class="co">## # $species: Homo sapiens, homo sapiens</span></span>
 <span><span class="co">## # $rdataclass: GRanges</span></span>
@@ -1323,7 +1330,7 @@ queries are based on</p>
 <h3 id="selecting-annotationhub-resource">Selecting AnnotationHub resource<a class="anchor" aria-label="anchor" href="#selecting-annotationhub-resource"></a>
 </h3>
 <div class="sourceCode" id="cb103"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">whatIwant</span> <span class="op">&lt;-</span> <span class="va">qry</span><span class="op">[[</span><span class="st">"AH80077"</span><span class="op">]</span><span class="op">]</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">whatIwant</span> <span class="op">&lt;-</span> <span class="va">qry</span><span class="op">[[</span><span class="st">"AH98495"</span><span class="op">]</span><span class="op">]</span></span></code></pre></div>
 <p>We can use these data as they are, or convert to a TxDb format:</p>
 <div class="sourceCode" id="cb104"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">GRCh38TxDb</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/makeTxDbFromGRanges.html" class="external-link">makeTxDbFromGRanges</a></span><span class="op">(</span><span class="va">whatIwant</span><span class="op">)</span></span>
@@ -1332,11 +1339,11 @@ queries are based on</p>
 <span><span class="co">## # Db type: TxDb</span></span>
 <span><span class="co">## # Supporting package: GenomicFeatures</span></span>
 <span><span class="co">## # Genome: GRCh38.p13</span></span>
-<span><span class="co">## # Nb of transcripts: 227887</span></span>
+<span><span class="co">## # Nb of transcripts: 244766</span></span>
 <span><span class="co">## # Db created by: GenomicFeatures package from Bioconductor</span></span>
-<span><span class="co">## # Creation time: 2022-07-14 15:59:48 +0000 (Thu, 14 Jul 2022)</span></span>
+<span><span class="co">## # Creation time: 2022-07-26 20:46:57 +0000 (Tue, 26 Jul 2022)</span></span>
 <span><span class="co">## # GenomicFeatures version at creation time: 1.49.5</span></span>
-<span><span class="co">## # RSQLite version at creation time: 2.2.14</span></span>
+<span><span class="co">## # RSQLite version at creation time: 2.2.15</span></span>
 <span><span class="co">## # DBSCHEMAVERSION: 1.2</span></span></code></pre>
 </div>
 <div class="section level3">
@@ -1475,7 +1482,7 @@ GAPDH?</p></li>
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer>
